@@ -6,5 +6,167 @@
     margin: 0;
     padding: 0;
 }
+ /* INSERCION DE LAS TIPOGRAFIAS */
+  
+    @font-face {
+        font-family: Lato-Black;
+        src: url(../fonts/Lato-Black.ttf);
+    }
+    
+    @font-face {
+        font-family: Lato-BlackItalic;
+        src: url(../fonts/Lato-BlackItalic.ttf);
+    }
+    
+    @font-face {
+        font-family: Lato-Bold;
+        src: url(../fonts/Lato-Bold.ttf);
+    }
+    
+    @font-face {
+        font-family: Lato-BoldItalic;
+        src: url(../fonts/Lato-BoldItalic.ttf);
+    }
+    
+    @font-face {
+        font-family: Lato-Italic;
+        src: url(../fonts/Lato-Italic.ttf);
+    }
+    
+    @font-face {
+        font-family: Lato-Light;
+        src: url(../fonts/Lato-Light.ttf);
+    }
+    
+    @font-face {
+        font-family: Lato-LightItalic;
+        src: url(../fonts/Lato-LightItalic.ttf);
+    }
+    
+    @font-face {
+        font-family: Lato-Regular;
+        src: url(../fonts/Lato-Regular);
+    }
+    
+    @font-face {
+        font-family: Lato-Thin;
+        src: url(../fonts/Lato-Thin.ttf);
+    }
+    
+    @font-face {
+        font-family: Lato-ThinItalic;
+        src: url(../fonts/Lato-ThinItalic.ttf);
+    }
+    html {
+        font-family: Lato-Regular;
+    }
+    
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-family: Lato-LightItalic;
+    }
+    
+    h5 {
+        font-size: 1.2rem;
+    }
+/******************** ENCABEZADO ********************/
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+#encabezado {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #1d4965;
+}
+.areamenu {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#boton-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #0095d5;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+#check {
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top:100px;
+}
+#boton-menu p {
+    font-family: Lato-Black;
+    font-size: .7em;
+    text-transform: uppercase;
+    color: #FFF;
+    line-height: .5em;
+    margin-top: 20px;
+    z-index: 101;
+    cursor: pointer;
+}
+#boton-menu p span {
+    font-size: 4em;
+}
+#encabezado h1 {
+    text-align: center;
+    color: #0095d5;
+    font-size: 1.7em;
+    line-height: 50px;
+    position: relative;
+    left: 3%;
+}
+.menu {
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 280px;
+    height: 100vh;
+    background-color: #0095d5;
+    color: #FFF;
+    text-align: center;
+    transition: 0.8s;
+}
+.menu-oculto {
+    left: -280px;
+}
 
+.menu .logo {
+    max-width: 220px;
+    margin: 40px auto;
+}
+.menu a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.mostrar-menu {
+    cursor: pointer;
+}
+.esconder-menu {
+    position: absolute;
+    top: -3px;
+    right: 5px;
+    font-size: 2.2em;
+    cursor: pointer;
+}
+#check:checked~.menu {
+    left: 0;
+}
 /******************** RESPONSIVE ********************/
