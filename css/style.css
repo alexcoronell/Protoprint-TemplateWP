@@ -77,6 +77,8 @@ header {
     width: 100%;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin: 0;
     position: fixed;
 }
 #encabezado {
@@ -86,7 +88,7 @@ header {
     background-color: #1d4965;
 }
 .areamenu {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 #boton-menu {
@@ -102,14 +104,12 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    z-index: 100;
+    z-index: 1;
 }
-#check {
-    /* display: none; */
-    position: absolute;
-    left: 50%;
-    top:100px;
+#boton-cerrar-menu {
+    display: none;
 }
+
 #boton-menu p {
     font-family: Lato-Black;
     font-size: .7em;
@@ -117,7 +117,6 @@ header {
     color: #FFF;
     line-height: .5em;
     margin-top: 20px;
-    z-index: 101;
     cursor: pointer;
 }
 #boton-menu p span {
@@ -130,20 +129,6 @@ header {
     line-height: 50px;
     position: relative;
     left: 3%;
-}
-.menu {
-    position: fixed;
-    left: 0;
-    top:0;
-    width: 280px;
-    height: 100vh;
-    background-color: #0095d5;
-    color: #FFF;
-    text-align: center;
-    transition: 0.8s;
-}
-.menu-oculto {
-    left: -280px;
 }
 
 .menu .logo {
@@ -166,7 +151,148 @@ header {
     font-size: 2.2em;
     cursor: pointer;
 }
-#check:checked~.menu {
-    left: 0;
-}
+
+
 /******************** RESPONSIVE ********************/
+/**** ENCABEZADO ****/
+
+@media (max-width: 767px) {
+  .ocultomobile {
+      display: none;
+  }
+  
+.menu {
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 280px;
+    height: 100vh;
+    background-color: #0095d5;
+    color: #FFF;
+    text-align: center;
+    transition: 0.8s;
+    z-index: 2;
+}
+.menu-oculto {
+    left: -100%;
+}
+}
+
+@media (min-width: 768px) {
+
+    header {
+        height: 100px;
+    }
+    .areamenu {
+        width: 100%;
+        min-width: 768px;
+        max-width: 992px;
+        height: 100px;
+        border: 0;
+    }
+    #boton-menu {
+        position: relative;
+        float: right;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+        transition: all 1s ease-in;
+    }
+    #boton-menu p {
+        font-size: 1em;
+    }
+    #boton-menu p span {
+        font-size: 6em;
+    }
+    .ocultar-menu {
+        display: block !important;
+        position: relative !important;
+        float: right;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #FFF;
+        text-align: center;
+        cursor: pointer;
+        transition: all 1s ease-in;
+        opacity: 1;
+    }
+    .ocultar-menu p {
+        line-height: 100px;
+        color: #0095d5;
+        background: #FFF;
+        font-family: Lato-Bold;
+        font-size: 2.5em;
+        font-weight: 500;
+        border: 0;
+    }
+    .ocultar-boton-menu {
+        display: none !important;
+    }
+    header div h1 {
+        display: none;
+    }
+    .menu .logo {
+        display: none;
+    }
+    .menu {
+        position: relative;
+        float: right;
+        right: 0;
+        top:50px;
+        width: 600px;
+        height: 0px;
+        overflow: hidden;
+        background-color: #0095d5;
+        color: #FFF;
+        text-align: center;
+        margin-left: auto;
+        margin: 0 !important;
+        transition: 0.8s;
+        display: flex;
+        transition: all 0.5s ease-in;
+        opacity: 0;
+    }
+    .menu-desktop {
+        height: 120px !important;
+        opacity: 1 !important;
+    }
+
+
+    .menu .enlaces-menu {
+        width: 120px;
+        height: 120px;
+        text-align: center;
+    }
+    .menu .enlaces-menu a {
+        font-size: 1.2em;
+        line-height: 120px;
+    }
+    #enlace1 a, #enlace2 a, #enlace3 a {
+        color: #1d4965;
+    }
+    #enlace4 a, #enlace5 a {
+        color: #c2daf1;
+    }
+    #enlace1 {
+        background-color: #c2daf1;
+    }
+    #enlace2 {
+        background-color: #7fb7e3;
+    }
+    #enlace3 {
+        background-color: #0095d5;
+    }
+    #enlace4 {
+        background-color: #177aae;
+    }
+    #enlace5 {
+        background-color: #1d4965;
+    }
+    .esconder-menu {
+        display: none;
+    }
+}
