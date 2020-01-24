@@ -1,452 +1,456 @@
-/******************** ESTILOS CSS3 ********************/
-
-
-/******************** GENERALES ********************/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* INSERCION DE LAS TIPOGRAFIAS */
-
-@font-face {
-    font-family: Lato-Black;
-    src: url(../fonts/Lato-Black.ttf);
-}
-
-@font-face {
-    font-family: Lato-BlackItalic;
-    src: url(../fonts/Lato-BlackItalic.ttf);
-}
-
-@font-face {
-    font-family: Lato-Bold;
-    src: url(../fonts/Lato-Bold.ttf);
-}
-
-@font-face {
-    font-family: Lato-BoldItalic;
-    src: url(../fonts/Lato-BoldItalic.ttf);
-}
-
-@font-face {
-    font-family: Lato-Italic;
-    src: url(../fonts/Lato-Italic.ttf);
-}
-
-@font-face {
-    font-family: Lato-Light;
-    src: url(../fonts/Lato-Light.ttf);
-}
-
-@font-face {
-    font-family: Lato-LightItalic;
-    src: url(../fonts/Lato-LightItalic.ttf);
-}
-
-@font-face {
-    font-family: Lato-Regular;
-    src: url(../fonts/Lato-Regular);
-}
-
-@font-face {
-    font-family: Lato-Thin;
-    src: url(../fonts/Lato-Thin.ttf);
-}
-
-@font-face {
-    font-family: Lato-ThinItalic;
-    src: url(../fonts/Lato-ThinItalic.ttf);
-}
-
-html {
-    font-family: Lato-Regular;
-}
-
-h3,
-h4,
-h5,
-h6,
-p {
-    font-family: Lato-LightItalic;
-}
-
-h5 {
-    font-size: 1.2rem;
-}
-
-.titulosections {
-    background-color: #0095d5;
-    color: #FFF;
-    font-family: Lato-ThinItalic;
-    font-weight: 700;
-    padding: 5px;
-    text-align: center;
-    line-height: 1.2em;
-}
-
-.container {
-    max-width: 992px;
-    background-color: #FFF;
-}
-
-
-/****************** FONDO ANIMADO *******************/
-
-@keyframes fondoAnimado {
-    0% {
-        opacity: 1;
-    }
-    20% {
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-    90% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-#fondo1 {
-    position: fixed;
-    width: 100%;
-    height: 100Vh;
-    background-image: url(../img/background1.jpg);
-    background-size: cover;
-    background-position: center;
-    animation: fondoAnimado 24s linear 18s infinite;
-    z-index: -1;
-}
-
-#fondo2 {
-    position: fixed;
-    width: 100%;
-    height: 100Vh;
-    background-image: url(../img/background2.jpg);
-    background-size: cover;
-    background-position: center;
-    animation: fondoAnimado 24s linear 12s infinite;
-    z-index: -1;
-}
-
-#fondo3 {
-    position: fixed;
-    width: 100%;
-    height: 100Vh;
-    background-image: url(../img/background3.jpg);
-    background-size: cover;
-    background-position: center;
-    animation: fondoAnimado 24s linear 6s infinite;
-    z-index: -1;
-}
-
-#fondo4 {
-    position: fixed;
-    width: 100%;
-    height: 100Vh;
-    background-image: url(../img/background4.jpg);
-    background-size: cover;
-    background-position: center;
-    animation: fondoAnimado 24s linear 0s infinite;
-    z-index: -1;
-}
-
-
-/******************** ENCABEZADO ********************/
-
-header {
-    width: 100%;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    z-index: 99999;
-}
-
-#encabezado {
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    background-color: #1d4965;
-}
-
-.areamenu {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-#boton-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    background-color: #0095d5;
-    text-align: center;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-}
-
-#boton-cerrar-menu {
-    display: none;
-}
-
-#boton-menu p {
-    font-family: Lato-Black;
-    font-size: .7em;
-    text-transform: uppercase;
-    color: #FFF;
-    line-height: .5em;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-#boton-menu p span {
-    font-size: 4em;
-}
-
-#encabezado h1 {
-    text-align: center;
-    color: #0095d5;
-    font-size: 1.7em;
-    line-height: 50px;
-    position: relative;
-    left: 3%;
-}
-
-.menu .logo {
-    max-width: 220px;
-    margin: 40px auto;
-}
-
-.menu a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 1.5em;
-    line-height: 1.5em;
-}
-
-.mostrar-menu {
-    cursor: pointer;
-}
-
-.esconder-menu {
-    position: absolute;
-    top: -3px;
-    right: 5px;
-    font-size: 2.2em;
-    cursor: pointer;
-}
-
-
-/******************** SECCION PRINCIPAL ********************/
-
-section#principal {
-    position: relative;
-    padding-top: 50px;
-    margin-bottom: 25px;
-}
-
-#carouselPrincipal {
-    width: 100%;
-}
-
-
-/****************** SECCION QUIENES SOMOS *******************/
-
-section#quienessomos {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    z-index: 1;
-}
-
-section#quienessomos p {
-    text-align: justify;
-    margin-top: 20px;
-    font-size: 1.2em;
-}
-
-
-/******************** RESPONSIVE ********************/
-
-
-/**** ENCABEZADO ****/
-
-@media (max-width: 767px) {
-    .ocultomobile {
-        display: none;
-    }
-    .menu {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 280px;
-        height: 100vh;
-        background-color: #0095d5;
-        color: #FFF;
-        text-align: center;
-        transition: 0.8s;
-        z-index: 99999;
-    }
-    .menu-oculto {
-        left: -100%;
-    }
-    section h2 {
-        font-size: 1.4em;
-    }
-}
-
-@media (min-width: 768px) {
-    .titulosections {
-        min-height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    header {
-        height: 100px;
-        height: auto;
-    }
-    .areamenu {
-        width: 100%;
-        min-width: 768px;
-        max-width: 992px;
-        height: 100px;
-        border: 0;
-    }
-    #boton-menu {
-        position: relative;
-        float: right;
-        top: 0;
-        right: 0;
-        width: 100px;
-        height: 100px;
-        opacity: 1;
-        transition: all 1s ease-in;
-    }
-    #boton-menu p {
-        font-size: 1em;
-    }
-    #boton-menu p span {
-        font-size: 6em;
-    }
-    .ocultar-menu {
-        display: block !important;
-        position: relative !important;
-        float: right;
-        top: 0;
-        right: 0;
-        width: 99px;
-        height: 99px;
-        border: 1px solid #000;
-        border-bottom: 1px solid #000;
-        background-color: #FFF;
-        text-align: center;
-        cursor: pointer;
-        transition: all 1s ease-in;
-        opacity: 1;
-        z-index: 10;
-    }
-    .ocultar-menu p {
-        line-height: 94px;
-        color: #0095d5;
-        background: #FFF;
-        font-family: Lato-Bold;
-        font-size: 2.5em;
-        font-weight: 500;
-        border: 0;
-    }
-    .ocultar-boton-menu {
-        display: none !important;
-    }
-    header div h1 {
-        display: none;
-    }
-    .menu .logo {
-        display: none;
-    }
-    .menu {
-        position: relative;
-        float: right;
-        right: 0;
-        top: 50px;
-        width: 600px;
-        height: 0px;
-        overflow: hidden;
-        background-color: #0095d5;
-        color: #FFF;
-        text-align: center;
-        margin-left: auto;
-        margin: 0 !important;
-        transition: 0.8s;
-        display: flex;
-        transition: all 0.5s ease-in;
-        opacity: 0;
-        z-index: 99999;
-        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.7);
-    }
-    .menu-desktop {
-        height: 120px !important;
-        opacity: 1 !important;
-    }
-    .menu .enlaces-menu {
-        width: 120px;
-        height: 120px;
-        text-align: center;
-    }
-    .menu .enlaces-menu a {
-        font-size: 1.2em;
-        line-height: 120px;
-    }
-    #enlace1 a,
-    #enlace2 a,
-    #enlace3 a {
-        color: #1d4965;
-    }
-    #enlace4 a,
-    #enlace5 a {
-        color: #c2daf1;
-    }
-    #enlace1 {
-        background-color: #c2daf1;
-    }
-    #enlace2 {
-        background-color: #7fb7e3;
-    }
-    #enlace3 {
-        background-color: #0095d5;
-    }
-    #enlace4 {
-        background-color: #177aae;
-    }
-    #enlace5 {
-        background-color: #1d4965;
-    }
-    .esconder-menu {
-        display: none;
-    }
-    /* CARRUSEL */
-    #carouselPrincipal {
-        min-width: 768px;
-        max-width: 992px;
-        margin: 0 auto;
-    }
-    /* SECCION QUIENES SOMOS */
-    section#quienessomos p {
-        text-align: justify;
-        font-size: 1.4em;
-        margin: 65px;
-        line-height: 1.6em;
-    }
-}
+                /******************** ESTILOS CSS3 ********************/
+                /******************** GENERALES ********************/
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                /* INSERCION DE LAS TIPOGRAFIAS */
+                
+                @font-face {
+                    font-family: Lato-Black;
+                    src: url(../fonts/Lato-Black.ttf);
+                }
+                
+                @font-face {
+                    font-family: Lato-BlackItalic;
+                    src: url(../fonts/Lato-BlackItalic.ttf);
+                }
+                
+                @font-face {
+                    font-family: Lato-Bold;
+                    src: url(../fonts/Lato-Bold.ttf);
+                }
+                
+                @font-face {
+                    font-family: Lato-BoldItalic;
+                    src: url(../fonts/Lato-BoldItalic.ttf);
+                }
+                
+                @font-face {
+                    font-family: Lato-Italic;
+                    src: url(../fonts/Lato-Italic.ttf);
+                }
+                
+                @font-face {
+                    font-family: Lato-Light;
+                    src: url(../fonts/Lato-Light.ttf);
+                }
+                
+                @font-face {
+                    font-family: Lato-LightItalic;
+                    src: url(../fonts/Lato-LightItalic.ttf);
+                }
+                
+                @font-face {
+                    font-family: Lato-Regular;
+                    src: url(../fonts/Lato-Regular);
+                }
+                
+                @font-face {
+                    font-family: Lato-Thin;
+                    src: url(../fonts/Lato-Thin.ttf);
+                }
+                
+                @font-face {
+                    font-family: Lato-ThinItalic;
+                    src: url(../fonts/Lato-ThinItalic.ttf);
+                }
+                
+                html {
+                    font-family: Lato-Regular;
+                }
+                
+                h3,
+                h4,
+                h5,
+                h6,
+                p {
+                    font-family: Lato-LightItalic;
+                }
+                
+                h5 {
+                    font-size: 1.2rem;
+                }
+                
+                .titulosections {
+                    background-color: #0095d5;
+                    color: #FFF;
+                    font-family: Lato-ThinItalic;
+                    font-weight: 700;
+                    padding: 5px;
+                    text-align: center;
+                    line-height: 1.2em;
+                }
+                
+                .container {
+                    max-width: 992px;
+                    background-color: #FFF;
+                }
+                /****************** FONDO ANIMADO *******************/
+                
+                @keyframes fondoAnimado {
+                    0% {
+                        opacity: 1;
+                    }
+                    20% {
+                        opacity: 1;
+                    }
+                    30% {
+                        opacity: 0;
+                    }
+                    90% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                
+                #fondo1 {
+                    position: fixed;
+                    width: 100%;
+                    height: 100Vh;
+                    background-image: url(../img/background1.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    animation: fondoAnimado 24s linear 18s infinite;
+                    z-index: -1;
+                }
+                
+                #fondo2 {
+                    position: fixed;
+                    width: 100%;
+                    height: 100Vh;
+                    background-image: url(../img/background2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    animation: fondoAnimado 24s linear 12s infinite;
+                    z-index: -1;
+                }
+                
+                #fondo3 {
+                    position: fixed;
+                    width: 100%;
+                    height: 100Vh;
+                    background-image: url(../img/background3.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    animation: fondoAnimado 24s linear 6s infinite;
+                    z-index: -1;
+                }
+                
+                #fondo4 {
+                    position: fixed;
+                    width: 100%;
+                    height: 100Vh;
+                    background-image: url(../img/background4.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    animation: fondoAnimado 24s linear 0s infinite;
+                    z-index: -1;
+                }
+                /******************** ENCABEZADO ********************/
+                
+                header {
+                    width: 100%;
+                    height: 50px;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    padding: 0;
+                    margin: 0;
+                    position: fixed;
+                    z-index: 99999;
+                }
+                
+                #encabezado {
+                    position: fixed;
+                    width: 100%;
+                    height: 50px;
+                    background-color: #1d4965;
+                }
+                
+                .areamenu {
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+                
+                #boton-menu {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #0095d5;
+                    text-align: center;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    z-index: 1;
+                }
+                
+                #boton-cerrar-menu {
+                    display: none;
+                }
+                
+                #boton-menu p {
+                    font-family: Lato-Black;
+                    font-size: .7em;
+                    text-transform: uppercase;
+                    color: #FFF;
+                    line-height: .5em;
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
+                
+                #boton-menu p span {
+                    font-size: 4em;
+                }
+                
+                #encabezado h1 {
+                    text-align: center;
+                    color: #0095d5;
+                    font-size: 1.7em;
+                    line-height: 50px;
+                    position: relative;
+                    left: 3%;
+                }
+                
+                .menu .logo {
+                    max-width: 220px;
+                    margin: 40px auto;
+                }
+                
+                .menu a {
+                    color: #FFF;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    line-height: 1.5em;
+                }
+                
+                .mostrar-menu {
+                    cursor: pointer;
+                }
+                
+                .esconder-menu {
+                    position: absolute;
+                    top: -3px;
+                    right: 5px;
+                    font-size: 2.2em;
+                    cursor: pointer;
+                }
+                /******************** SECCION PRINCIPAL ********************/
+                
+                section#principal {
+                    position: relative;
+                    padding-top: 50px;
+                    margin-bottom: 25px;
+                }
+                
+                #carouselPrincipal {
+                    width: 100%;
+                }
+                /****************** SECCION QUIENES SOMOS *******************/
+                
+                section#quienessomos {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    z-index: 1;
+                }
+                
+                section#quienessomos p {
+                    text-align: justify;
+                    margin-top: 20px;
+                    font-size: 1.2em;
+                }
+                /******************** SECCION SERVICIOS ********************/
+                
+                section#servicios .contenido-servicios .imagenes-servicios-seccion {
+                    padding: 0;
+                }
+                
+                section#servicios .titulos-servicios {
+                    position: absolute;
+                    background-color: #0095d5bd;
+                    width: 95%;
+                    top: 40%;
+                    left: 5px;
+                    text-align: center;
+                }
+                /******************** RESPONSIVE ********************/
+                /**** ENCABEZADO ****/
+                
+                @media (max-width: 767px) {
+                    .ocultomobile {
+                        display: none;
+                    }
+                    .menu {
+                        position: fixed;
+                        left: 0;
+                        top: 0;
+                        width: 280px;
+                        height: 100vh;
+                        background-color: #0095d5;
+                        color: #FFF;
+                        text-align: center;
+                        transition: 0.8s;
+                        z-index: 99999;
+                    }
+                    .menu-oculto {
+                        left: -100%;
+                    }
+                    section h2 {
+                        font-size: 1.4em;
+                    }
+                    section#servicios .container {
+                        padding: 0;
+                    }
+                    section#servicios .titulos-servicios {
+                        left: 20px;
+                    }
+                }
+                
+                @media (min-width: 768px) {
+                    .titulosections {
+                        min-height: 400px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    header {
+                        height: 100px;
+                        height: auto;
+                    }
+                    .areamenu {
+                        width: 100%;
+                        min-width: 768px;
+                        max-width: 992px;
+                        height: 100px;
+                        border: 0;
+                    }
+                    #boton-menu {
+                        position: relative;
+                        float: right;
+                        top: 0;
+                        right: 0;
+                        width: 100px;
+                        height: 100px;
+                        opacity: 1;
+                        transition: all 1s ease-in;
+                    }
+                    #boton-menu p {
+                        font-size: 1em;
+                    }
+                    #boton-menu p span {
+                        font-size: 6em;
+                    }
+                    .ocultar-menu {
+                        display: block !important;
+                        position: relative !important;
+                        float: right;
+                        top: 0;
+                        right: 0;
+                        width: 99px;
+                        height: 99px;
+                        border: 1px solid #000;
+                        border-bottom: 1px solid #000;
+                        background-color: #FFF;
+                        text-align: center;
+                        cursor: pointer;
+                        transition: all 1s ease-in;
+                        opacity: 1;
+                        z-index: 10;
+                    }
+                    .ocultar-menu p {
+                        line-height: 94px;
+                        color: #0095d5;
+                        background: #FFF;
+                        font-family: Lato-Bold;
+                        font-size: 2.5em;
+                        font-weight: 500;
+                        border: 0;
+                    }
+                    .ocultar-boton-menu {
+                        display: none !important;
+                    }
+                    header div h1 {
+                        display: none;
+                    }
+                    .menu .logo {
+                        display: none;
+                    }
+                    .menu {
+                        position: relative;
+                        float: right;
+                        right: 0;
+                        top: 50px;
+                        width: 600px;
+                        height: 0px;
+                        overflow: hidden;
+                        background-color: #0095d5;
+                        color: #FFF;
+                        text-align: center;
+                        margin-left: auto;
+                        margin: 0 !important;
+                        transition: 0.8s;
+                        display: flex;
+                        transition: all 0.5s ease-in;
+                        opacity: 0;
+                        z-index: 99999;
+                        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.7);
+                    }
+                    .menu-desktop {
+                        height: 120px !important;
+                        opacity: 1 !important;
+                    }
+                    .menu .enlaces-menu {
+                        width: 120px;
+                        height: 120px;
+                        text-align: center;
+                    }
+                    .menu .enlaces-menu a {
+                        font-size: 1.2em;
+                        line-height: 120px;
+                    }
+                    #enlace1 a,
+                    #enlace2 a,
+                    #enlace3 a {
+                        color: #1d4965;
+                    }
+                    #enlace4 a,
+                    #enlace5 a {
+                        color: #c2daf1;
+                    }
+                    #enlace1 {
+                        background-color: #c2daf1;
+                    }
+                    #enlace2 {
+                        background-color: #7fb7e3;
+                    }
+                    #enlace3 {
+                        background-color: #0095d5;
+                    }
+                    #enlace4 {
+                        background-color: #177aae;
+                    }
+                    #enlace5 {
+                        background-color: #1d4965;
+                    }
+                    .esconder-menu {
+                        display: none;
+                    }
+                    /* CARRUSEL */
+                    #carouselPrincipal {
+                        min-width: 768px;
+                        max-width: 992px;
+                        margin: 0 auto;
+                    }
+                    /* SECCION QUIENES SOMOS */
+                    section#quienessomos p {
+                        text-align: justify;
+                        font-size: 1.4em;
+                        margin: 65px;
+                        line-height: 1.6em;
+                    }
+                }
