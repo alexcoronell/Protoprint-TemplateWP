@@ -87,6 +87,7 @@ header {
     padding: 0;
     margin: 0;
     position: fixed;
+    z-index: 99999;
 }
 
 #encabezado {
@@ -169,6 +170,18 @@ header {
 }
 
 
+/******************** SECCION PRINCIPAL ********************/
+
+section#principal {
+    position: relative;
+    padding-top: 50px;
+}
+
+#carouselPrincipal {
+    width: 100%;
+}
+
+
 /******************** RESPONSIVE ********************/
 
 
@@ -188,7 +201,7 @@ header {
         color: #FFF;
         text-align: center;
         transition: 0.8s;
-        z-index: 2;
+        z-index: 99999;
     }
     .menu-oculto {
         left: -100%;
@@ -274,7 +287,8 @@ header {
         display: flex;
         transition: all 0.5s ease-in;
         opacity: 0;
-        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+        z-index: 99999;
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.7);
     }
     .menu-desktop {
         height: 120px !important;
@@ -315,5 +329,11 @@ header {
     }
     .esconder-menu {
         display: none;
+    }
+    /* CARRUSEL */
+    #carouselPrincipal {
+        min-width: 768px;
+        max-width: 992px;
+        margin: 0 auto;
     }
 }

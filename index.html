@@ -24,9 +24,11 @@
                 <div id="boton-menu" class="mostrar-menu">
                     <p><span>&#8801</span><br>Menú</p>
                 </div>
+                <!-- Fin boton-menu -->
                 <div id="boton-cerrar-menu" class="ocultar-menu ocultar-boton-menu ocultomobile">
                     <p><span>X</span></p>
                 </div>
+                <!-- Fin boton-cerrar-menu -->
 
                 <nav class="menu menu-oculto">
                     <div class="logo img-fluid"><img src="img/logo.svg" alt="Protoprint" title="Protoprint"></div>
@@ -40,28 +42,52 @@
                     </div>
                 </nav>
 
-                <!-- <nav class="menu menu-oculto">
-          <div class="logo img-fluid"><img src="img/logo.svg" alt="Protoprint" title="Protoprint"></div>
-          <div class="enlaces-menu" id="enlace1"><a href="#">Inicio</a></div>
-          <div class="enlaces-menu" id="enlace2"><a href="#">La Empresa</a></div class="enlaces-menu">
-          <div class="enlaces-menu" id="enlace3"><a href="#">Servicios</a></div>
-          <div class="enlaces-menu" id="enlace4"><a href="#">Catálogo</a></div>
-          <div class="enlaces-menu" id="enlace5"><a href="#">Contacto</a></div>
-          <div class="esconder-menu">
-            &#215
-          </div>
-        </nav> -->
-
             </div>
             <!-- Fin areamenu -->
             <h1>Protoprint</h1>
 
         </div>
         <!-- Fin encabezado -->
-
-
     </header>
 
+    <!---------------------------------------- SECCION PRINCIPAL ------------------------------------------->
+    <section id="principal">
+        <!-- CARROUSEL -->
+        <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselPrincipal" data-slide-to="1"></li>
+                <li data-target="#carouselPrincipal" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/01-impresiondigotal-.jpg" class="d-block img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/02-impresionkonica.jpg" class="d-block img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/03-domicilios.jpg" class="d-block img-fluid" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselPrincipal" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselPrincipal" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!------------------------------------- SCRIPTS Y LIBRERIAS JAVASCRIPT --------------------------------->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <!-- Versión 1.14.7 -->
