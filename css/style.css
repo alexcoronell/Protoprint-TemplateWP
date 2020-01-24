@@ -77,6 +77,21 @@ h5 {
     font-size: 1.2rem;
 }
 
+.titulosections {
+    background-color: #0095d5;
+    color: #FFF;
+    font-family: Lato-ThinItalic;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.container {
+    max-width: 992px;
+    background-color: #FFF;
+}
+
 
 /****************** FONDO ANIMADO *******************/
 
@@ -99,39 +114,47 @@ h5 {
 }
 
 #fondo1 {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100Vh;
     background-image: url(../img/background1.jpg);
+    background-size: cover;
+    background-position: center;
     animation: fondoAnimado 24s linear 18s infinite;
+    z-index: -1;
 }
 
 #fondo2 {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100Vh;
     background-image: url(../img/background2.jpg);
     background-size: cover;
     background-position: center;
     animation: fondoAnimado 24s linear 12s infinite;
+    z-index: -1;
 }
 
 #fondo3 {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100Vh;
     background-image: url(../img/background3.jpg);
     background-size: cover;
     background-position: center;
     animation: fondoAnimado 24s linear 6s infinite;
+    z-index: -1;
 }
 
 #fondo4 {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100Vh;
     background-image: url(../img/background4.jpg);
+    background-size: cover;
+    background-position: center;
     animation: fondoAnimado 24s linear 0s infinite;
+    z-index: -1;
 }
 
 
@@ -232,10 +255,26 @@ header {
 section#principal {
     position: relative;
     padding-top: 50px;
+    margin-bottom: 25px;
 }
 
 #carouselPrincipal {
     width: 100%;
+}
+
+
+/****************** SECCION QUIENES SOMOS *******************/
+
+section#quienessomos {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    z-index: 1;
+}
+
+section#quienessomos p {
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 1.2em;
 }
 
 
@@ -263,11 +302,21 @@ section#principal {
     .menu-oculto {
         left: -100%;
     }
+    section h2 {
+        font-size: 1.4em;
+    }
 }
 
 @media (min-width: 768px) {
+    .titulosections {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     header {
         height: 100px;
+        height: auto;
     }
     .areamenu {
         width: 100%;
@@ -392,5 +441,12 @@ section#principal {
         min-width: 768px;
         max-width: 992px;
         margin: 0 auto;
+    }
+    /* SECCION QUIENES SOMOS */
+    section#quienessomos p {
+        text-align: justify;
+        font-size: 1.4em;
+        margin: 65px;
+        line-height: 1.6em;
     }
 }
