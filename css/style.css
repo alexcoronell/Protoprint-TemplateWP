@@ -1,78 +1,85 @@
 /******************** ESTILOS CSS3 ********************/
 
+
 /******************** GENERALES ********************/
 
 * {
     margin: 0;
     padding: 0;
 }
- /* INSERCION DE LAS TIPOGRAFIAS */
-  
-    @font-face {
-        font-family: Lato-Black;
-        src: url(../fonts/Lato-Black.ttf);
-    }
-    
-    @font-face {
-        font-family: Lato-BlackItalic;
-        src: url(../fonts/Lato-BlackItalic.ttf);
-    }
-    
-    @font-face {
-        font-family: Lato-Bold;
-        src: url(../fonts/Lato-Bold.ttf);
-    }
-    
-    @font-face {
-        font-family: Lato-BoldItalic;
-        src: url(../fonts/Lato-BoldItalic.ttf);
-    }
-    
-    @font-face {
-        font-family: Lato-Italic;
-        src: url(../fonts/Lato-Italic.ttf);
-    }
-    
-    @font-face {
-        font-family: Lato-Light;
-        src: url(../fonts/Lato-Light.ttf);
-    }
-    
-    @font-face {
-        font-family: Lato-LightItalic;
-        src: url(../fonts/Lato-LightItalic.ttf);
-    }
-    
-    @font-face {
-        font-family: Lato-Regular;
-        src: url(../fonts/Lato-Regular);
-    }
-    
-    @font-face {
-        font-family: Lato-Thin;
-        src: url(../fonts/Lato-Thin.ttf);
-    }
-    
-    @font-face {
-        font-family: Lato-ThinItalic;
-        src: url(../fonts/Lato-ThinItalic.ttf);
-    }
-    html {
-        font-family: Lato-Regular;
-    }
-    
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-        font-family: Lato-LightItalic;
-    }
-    
-    h5 {
-        font-size: 1.2rem;
-    }
+
+
+/* INSERCION DE LAS TIPOGRAFIAS */
+
+@font-face {
+    font-family: Lato-Black;
+    src: url(../fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: Lato-BlackItalic;
+    src: url(../fonts/Lato-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lato-BoldItalic;
+    src: url(../fonts/Lato-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Lato-Italic;
+    src: url(../fonts/Lato-Italic.ttf);
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato-LightItalic;
+    src: url(../fonts/Lato-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato-Regular);
+}
+
+@font-face {
+    font-family: Lato-Thin;
+    src: url(../fonts/Lato-Thin.ttf);
+}
+
+@font-face {
+    font-family: Lato-ThinItalic;
+    src: url(../fonts/Lato-ThinItalic.ttf);
+}
+
+html {
+    font-family: Lato-Regular;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: Lato-LightItalic;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+
 /******************** ENCABEZADO ********************/
+
 header {
     width: 100%;
     height: 50px;
@@ -81,16 +88,19 @@ header {
     margin: 0;
     position: fixed;
 }
+
 #encabezado {
     position: fixed;
     width: 100%;
     height: 50px;
     background-color: #1d4965;
 }
+
 .areamenu {
     max-width: 100%;
     margin: 0 auto;
 }
+
 #boton-menu {
     position: fixed;
     top: 0;
@@ -106,6 +116,7 @@ header {
     align-items: center;
     z-index: 1;
 }
+
 #boton-cerrar-menu {
     display: none;
 }
@@ -119,9 +130,11 @@ header {
     margin-top: 20px;
     cursor: pointer;
 }
+
 #boton-menu p span {
     font-size: 4em;
 }
+
 #encabezado h1 {
     text-align: center;
     color: #0095d5;
@@ -135,15 +148,18 @@ header {
     max-width: 220px;
     margin: 40px auto;
 }
+
 .menu a {
     color: #FFF;
     text-decoration: none;
     font-size: 1.5em;
     line-height: 1.5em;
 }
+
 .mostrar-menu {
     cursor: pointer;
 }
+
 .esconder-menu {
     position: absolute;
     top: -3px;
@@ -154,32 +170,32 @@ header {
 
 
 /******************** RESPONSIVE ********************/
+
+
 /**** ENCABEZADO ****/
 
 @media (max-width: 767px) {
-  .ocultomobile {
-      display: none;
-  }
-  
-.menu {
-    position: fixed;
-    left: 0;
-    top:0;
-    width: 280px;
-    height: 100vh;
-    background-color: #0095d5;
-    color: #FFF;
-    text-align: center;
-    transition: 0.8s;
-    z-index: 2;
-}
-.menu-oculto {
-    left: -100%;
-}
+    .ocultomobile {
+        display: none;
+    }
+    .menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 280px;
+        height: 100vh;
+        background-color: #0095d5;
+        color: #FFF;
+        text-align: center;
+        transition: 0.8s;
+        z-index: 2;
+    }
+    .menu-oculto {
+        left: -100%;
+    }
 }
 
 @media (min-width: 768px) {
-
     header {
         height: 100px;
     }
@@ -212,16 +228,19 @@ header {
         float: right;
         top: 0;
         right: 0;
-        width: 100px;
-        height: 100px;
+        width: 99px;
+        height: 99px;
+        border: 1px solid #000;
+        border-bottom: 1px solid #000;
         background-color: #FFF;
         text-align: center;
         cursor: pointer;
         transition: all 1s ease-in;
         opacity: 1;
+        z-index: 10;
     }
     .ocultar-menu p {
-        line-height: 100px;
+        line-height: 94px;
         color: #0095d5;
         background: #FFF;
         font-family: Lato-Bold;
@@ -242,7 +261,7 @@ header {
         position: relative;
         float: right;
         right: 0;
-        top:50px;
+        top: 50px;
         width: 600px;
         height: 0px;
         overflow: hidden;
@@ -255,13 +274,12 @@ header {
         display: flex;
         transition: all 0.5s ease-in;
         opacity: 0;
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
     }
     .menu-desktop {
         height: 120px !important;
         opacity: 1 !important;
     }
-
-
     .menu .enlaces-menu {
         width: 120px;
         height: 120px;
@@ -271,10 +289,13 @@ header {
         font-size: 1.2em;
         line-height: 120px;
     }
-    #enlace1 a, #enlace2 a, #enlace3 a {
+    #enlace1 a,
+    #enlace2 a,
+    #enlace3 a {
         color: #1d4965;
     }
-    #enlace4 a, #enlace5 a {
+    #enlace4 a,
+    #enlace5 a {
         color: #c2daf1;
     }
     #enlace1 {
