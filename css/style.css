@@ -76,11 +76,11 @@
                 .titulosections {
                     background-color: #0095d5;
                     color: #FFF;
-                    font-family: Lato-ThinItalic;
-                    font-weight: 700;
+                    font-family: Lato-BoldItalic;
                     padding: 5px;
                     text-align: center;
                     line-height: 1.2em;
+                    text-shadow: 2px 2px 3px #1d4965ab;
                 }
                 
                 .container {
@@ -269,14 +269,29 @@
                 section#servicios .contenido-servicios .imagenes-servicios-seccion {
                     padding: 0;
                 }
+
+                section#servicios .contenido-servicios .imagenes-servicios-seccion .container img {
+                    border-radius: 50% !important;
+                    border: 3px solid #0095d5;
+                    overflow: hidden;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
                 
                 section#servicios .titulos-servicios {
                     position: absolute;
                     background-color: #0095d5bd;
-                    width: 95%;
-                    top: 40%;
-                    left: 5px;
+                    width: 83%;
+                    top: 42%;
+                    left: 25px;
                     text-align: center;
+                    height: 50px;
+                }
+                section#servicios .titulos-servicios h3 {
+                    color: #FFF;
+                    font-size: 2em;
+                    text-shadow: 1px 1px 4px #1d4965;
+                    line-height: 50px;
                 }
                 /******************** RESPONSIVE ********************/
                 /**** ENCABEZADO ****/
@@ -303,12 +318,6 @@
                     section h2 {
                         font-size: 1.4em;
                     }
-                    section#servicios .container {
-                        padding: 0;
-                    }
-                    section#servicios .titulos-servicios {
-                        left: 20px;
-                    }
                 }
                 
                 @media (min-width: 768px) {
@@ -320,7 +329,6 @@
                     }
                     header {
                         height: 100px;
-                        height: auto;
                     }
                     .areamenu {
                         width: 100%;
@@ -453,4 +461,31 @@
                         margin: 65px;
                         line-height: 1.6em;
                     }
+
+                    /* SECCION SERVICIOS */
+                    section#servicios .titulos-servicios {
+                        width: 78%;
+                        top: 42%;
+                        left: 22px;
+                        height: 35px;
+                    }
+
+                    section#servicios .titulos-servicios h3 {
+                        font-size: 1.4em;
+                        line-height: 35px;
+                    }
                 }
+                @media (min-width: 992px) {
+                    /* SECCION SERVICIOS */
+                    section#servicios .titulos-servicios {
+                        width: 82%;
+                        top: 42%;
+                        left: 22px;
+                        height: 40px;
+                    }
+
+                    section#servicios .titulos-servicios h3 {
+                        font-size: 1.7em;
+                        line-height: 40px;
+                    }
+                } 
