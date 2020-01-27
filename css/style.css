@@ -111,6 +111,24 @@
                     }
                 }
                 
+                @-webkit-keyframes fondoAnimado {
+                    0% {
+                        opacity: 1;
+                    }
+                    20% {
+                        opacity: 1;
+                    }
+                    30% {
+                        opacity: 0;
+                    }
+                    90% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                
                 #fondo1 {
                     position: fixed;
                     width: 100%;
@@ -119,6 +137,7 @@
                     background-size: cover;
                     background-position: center;
                     animation: fondoAnimado 24s linear 18s infinite;
+                    -webkit-animation: fondoAnimado 24s linear 18s infinite;
                     z-index: -1;
                 }
                 
@@ -130,6 +149,7 @@
                     background-size: cover;
                     background-position: center;
                     animation: fondoAnimado 24s linear 12s infinite;
+                    -webkit-animation: fondoAnimado 24s linear 12s infinite;
                     z-index: -1;
                 }
                 
@@ -141,6 +161,7 @@
                     background-size: cover;
                     background-position: center;
                     animation: fondoAnimado 24s linear 6s infinite;
+                    -webkit-animation: fondoAnimado 24s linear 6s infinite;
                     z-index: -1;
                 }
                 
@@ -152,6 +173,7 @@
                     background-size: cover;
                     background-position: center;
                     animation: fondoAnimado 24s linear 0s infinite;
+                    -webkit-animation: fondoAnimado 24s linear 0s infinite;
                     z-index: -1;
                 }
                 /******************** ENCABEZADO ********************/
@@ -404,18 +426,21 @@
                     opacity: 1;
                 }
                 
-                .llamar li {
+                .llamar li,
+                .whatsapp li {
                     line-height: .3em;
                 }
                 
-                .llamar li a {
+                .llamar li a,
+                .whatsapp li a {
                     display: block;
                     font-size: 2em;
                     padding-bottom: 0;
                     margin-bottom: 0;
                 }
                 
-                .llamar span {
+                .llamar span,
+                .whatsapp span {
                     font-size: 0.5em;
                     margin-top: 0;
                 }
@@ -661,7 +686,8 @@
                     #footer1 {
                         padding-bottom: 70px;
                     }
-                    .llamar {
+                    .llamar,
+                    .whatsapp {
                         display: none;
                     }
                 }

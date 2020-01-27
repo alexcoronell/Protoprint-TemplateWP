@@ -35,7 +35,7 @@ $('document').ready(function() {
         prevArrow: '<button type="button" class="slick-prev botones-slider-infopromociones"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>'
     });
 
-    /***********************SMOOTH SCROLL */
+    /***********************SMOOTH SCROLL ************************************/
     smoothScroll.init({
         speed: 1500, // Integer. How fast to complete the scroll in milliseconds
         offset: 100, // Integer. How far to offset the scrolling anchor location in pixels
