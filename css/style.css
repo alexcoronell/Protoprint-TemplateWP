@@ -87,6 +87,8 @@
                     max-width: 992px;
                     background-color: #FFF;
                 }
+                
+                section#principal
                 /****************** FONDO ANIMADO *******************/
                 
                 @keyframes fondoAnimado {
@@ -266,10 +268,15 @@
                 }
                 /******************** SECCION SERVICIOS ********************/
                 
+                section#servicios {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                
                 section#servicios .contenido-servicios .imagenes-servicios-seccion {
                     padding: 0;
                 }
-
+                
                 section#servicios .contenido-servicios .imagenes-servicios-seccion .container img {
                     border-radius: 50% !important;
                     border: 3px solid #0095d5;
@@ -287,11 +294,30 @@
                     text-align: center;
                     height: 50px;
                 }
+                
                 section#servicios .titulos-servicios h3 {
                     color: #FFF;
                     font-size: 2em;
                     text-shadow: 1px 1px 4px #1d4965;
                     line-height: 50px;
+                }
+                /******************** SECCION INFOPROMOCIONES ********************/
+                
+                section#infopromociones {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                
+                .infopromociones-slider {
+                    width: 80%;
+                    height: auto;
+                    margin: 20px auto;
+                }
+                
+                .slick-dots li.slick-active button::before {
+                    color: #0095d5 !important;
+                    opacity: 1;
+                    text-shadow: 1px 1px 1px #0095d5bd;
                 }
                 /******************** RESPONSIVE ********************/
                 /**** ENCABEZADO ****/
@@ -317,6 +343,18 @@
                     }
                     section h2 {
                         font-size: 1.4em;
+                    }
+                    .infopromociones-slider {
+                        width: 100%;
+                    }
+                    .botones-slider-infopromociones::before {
+                        display: none;
+                    }
+                    .slick-dots li {
+                        margin: 0;
+                    }
+                    .infopromociones-slider {
+                        width: 100%;
                     }
                 }
                 
@@ -461,7 +499,6 @@
                         margin: 65px;
                         line-height: 1.6em;
                     }
-
                     /* SECCION SERVICIOS */
                     section#servicios .titulos-servicios {
                         width: 78%;
@@ -469,12 +506,21 @@
                         left: 22px;
                         height: 35px;
                     }
-
                     section#servicios .titulos-servicios h3 {
                         font-size: 1.4em;
                         line-height: 35px;
                     }
+                    /* SECCION INFOPROMOCIONES */
+                    .infopromociones-slider div {
+                        margin-left: 3px;
+                    }
+                    .botones-slider-infopromociones::before {
+                        color: #0095d5;
+                        cursor: pointer;
+                        font-size: 30px;
+                    }
                 }
+                
                 @media (min-width: 992px) {
                     /* SECCION SERVICIOS */
                     section#servicios .titulos-servicios {
@@ -483,9 +529,8 @@
                         left: 22px;
                         height: 40px;
                     }
-
                     section#servicios .titulos-servicios h3 {
                         font-size: 1.7em;
                         line-height: 40px;
                     }
-                } 
+                }

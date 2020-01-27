@@ -5,15 +5,15 @@ $('document').ready(function() {
         if ($(window).width() < 768) {
             $('.menu').removeClass('menu-oculto');
         } else {
-        $('#boton-menu').addClass('ocultar-boton-menu');
-        $('#boton-cerrar-menu').addClass('ocultar-menu');
-        $('#boton-cerrar-menu').removeClass('ocultar-boton-menu');
-        $('.menu').addClass('menu-desktop');
+            $('#boton-menu').addClass('ocultar-boton-menu');
+            $('#boton-cerrar-menu').addClass('ocultar-menu');
+            $('#boton-cerrar-menu').removeClass('ocultar-boton-menu');
+            $('.menu').addClass('menu-desktop');
         }
     });
-    
+
     $('.esconder-menu').click(function() {
-            $('.menu').addClass('menu-oculto');
+        $('.menu').addClass('menu-oculto');
     });
 
     $('#boton-cerrar-menu').click(function() {
@@ -23,5 +23,16 @@ $('document').ready(function() {
         $('.menu').removeClass('menu-desktop');
     });
 
+    /************************* INFOPROMOCIONES ***************************/
+    $('.infopromociones-slider').slick({
+        arrows: true,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        nextArrow: '<button type="button" class="slick-next botones-slider-infopromociones"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>',
+        prevArrow: '<button type="button" class="slick-prev botones-slider-infopromociones"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>'
+    });
 
-});
+}); /* Fin $('document').ready(function() */
