@@ -319,6 +319,34 @@
                     opacity: 1;
                     text-shadow: 1px 1px 1px #0095d5bd;
                 }
+                /******************** SECCION CONTACTO ********************/
+                
+                section#contacto {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                
+                form>div>h4 {
+                    margin-top: 15px;
+                }
+                
+                .form-control {
+                    border-radius: 0px;
+                    border-color: #0095d5;
+                }
+                
+                .cajaformulario .btn {
+                    border-radius: 0px;
+                    width: 100%;
+                }
+                
+                .caja-mapas {
+                    margin-bottom: 15px;
+                }
+                
+                .caja-mapas img {
+                    border: 2px solid #0095d5;
+                }
                 /******************** RESPONSIVE ********************/
                 /**** ENCABEZADO ****/
                 
@@ -355,6 +383,9 @@
                     }
                     .infopromociones-slider {
                         width: 100%;
+                    }
+                    .caja-mapas img {
+                        margin-bottom: 10px;
                     }
                 }
                 
