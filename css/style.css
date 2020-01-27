@@ -4,6 +4,8 @@
                 * {
                     margin: 0;
                     padding: 0;
+                    text-decoration: none;
+                    list-style: none;
                 }
                 /* INSERCION DE LAS TIPOGRAFIAS */
                 
@@ -347,6 +349,111 @@
                 .caja-mapas img {
                     border: 2px solid #0095d5;
                 }
+                /******************** FOOTER ********************/
+                
+                footer {
+                    color: #FFF;
+                }
+                
+                footer article {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                
+                footer h4 {
+                    font-weight: bold;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                
+                footer a {
+                    color: #FFF;
+                }
+                
+                footer a:hover {
+                    color: #FFF;
+                    text-decoration: none;
+                }
+                /* Footer 1 */
+                
+                footer .container {
+                    background: transparent;
+                }
+                
+                #footer1 {
+                    background-color: #0095d5;
+                }
+                /* Footer 2 */
+                
+                #footer2 {
+                    background-color: #177aae;
+                    padding: 10px;
+                }
+                
+                .redessociales {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                
+                .redessociales li {
+                    font-size: 3em;
+                    opacity: 0.7;
+                }
+                
+                .redessociales li:hover {
+                    opacity: 1;
+                }
+                
+                .llamar li {
+                    line-height: .3em;
+                }
+                
+                .llamar li a {
+                    display: block;
+                    font-size: 2em;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+                
+                .llamar span {
+                    font-size: 0.5em;
+                    margin-top: 0;
+                }
+                /* Footer 3 */
+                
+                #footer3 {
+                    background-color: #1d4965;
+                    padding: 15px;
+                }
+                
+                #footer3 p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                /* Footer 4 */
+                
+                #footer4 {
+                    background-color: #7fb7e3;
+                    padding: 20px;
+                }
+                
+                #footer4 p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-size: 1.5em;
+                }
+                /* Footer 5 */
+                
+                #footer5 {
+                    background-color: #121c24;
+                    padding: 10px;
+                }
+                
+                #footer5 p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-size: 1.5em;
+                }
                 /******************** RESPONSIVE ********************/
                 /**** ENCABEZADO ****/
                 
@@ -549,6 +656,13 @@
                         color: #0095d5;
                         cursor: pointer;
                         font-size: 30px;
+                    }
+                    /* FOOTER */
+                    #footer1 {
+                        padding-bottom: 70px;
+                    }
+                    .llamar {
+                        display: none;
                     }
                 }
                 
