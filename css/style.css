@@ -318,12 +318,15 @@
                     text-align: center;
                     height: 50px;
                 }
+                
                 section#servicios .titulos-servicios:hover {
                     background-color: #0095d5;
                 }
+                
                 section#servicios .titulos-servicios a {
                     text-decoration: none;
                 }
+                
                 section#servicios .titulos-servicios h3 {
                     color: #FFF;
                     font-size: 2em;
@@ -331,13 +334,12 @@
                     line-height: 50px;
                 }
                 /******************** MODALES ********************/
-
+                
                 .modal-title {
                     font-weight: 700;
                     color: #0095d5;
                     font-size: 1.6em;
                 }
-                
                 /******************** SECCION INFOPROMOCIONES ********************/
                 
                 section#infopromociones {
@@ -381,8 +383,19 @@
                     margin-bottom: 15px;
                 }
                 
-                .caja-mapas img {
+                .mapainteractivo {
+                    overflow: hidden;
+                }
+                
+                .mapainteractivo h5 {
+                    color: #0095d5;
+                    font-family: Lato-BlackItalic;
+                }
+                
+                .mapainteractivo iframe {
                     border: 2px solid #0095d5;
+                    width: 315.75px;
+                    height: 315.75px;
                 }
                 /******************** FOOTER ********************/
                 
