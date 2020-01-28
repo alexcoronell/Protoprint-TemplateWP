@@ -514,7 +514,8 @@
                     z-index: 1;
                 }
                 
-                .principal-quienessomos {
+                .principal-quienessomos,
+                .principal-servicios {
                     width: 100%;
                     padding: 0;
                 }
@@ -573,6 +574,25 @@
                 .contenidoValores {
                     display: none;
                     transition: all 0.5s ease-in-out;
+                }
+                
+                #contenido-servicios .container {
+                    background: transparent;
+                }
+                
+                #contenido-servicios>.container>.container {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    background-color: #FFF;
+                    padding: 0;
+                }
+                
+                #contenido-servicios>.container>.container>article {
+                    padding: 0;
+                }
+                
+                .imagenes-pagina-servicios {
+                    padding-bottom: 20px;
                 }
                 /******************** RESPONSIVE ********************/
                 /**** ENCABEZADO ****/
@@ -819,6 +839,20 @@
                     }
                     .contenidosMisionVisionValores {
                         min-height: 425px;
+                    }
+                    .titulos-pagina-servicios {
+                        min-height: 250px;
+                    }
+                    .imagenes-pagina-servicios {
+                        margin-top: 15px;
+                    }
+                    .contenidos-paginas-servicios {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .contenidos-paginas-servicios p {
+                        font-size: 1.3em;
                     }
                 }
                 
