@@ -514,7 +514,8 @@
                 
                 .principal-quienessomos,
                 .principal-servicios,
-                .principal-catalogo {
+                .principal-catalogo,
+                .principal-blog {
                     width: 100%;
                     padding: 0;
                 }
