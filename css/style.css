@@ -89,8 +89,6 @@
                     max-width: 992px;
                     background-color: #FFF;
                 }
-                
-                section#principal
                 /****************** FONDO ANIMADO *******************/
                 
                 @keyframes fondoAnimado {
@@ -515,7 +513,8 @@
                 }
                 
                 .principal-quienessomos,
-                .principal-servicios {
+                .principal-servicios,
+                .principal-catalogo {
                     width: 100%;
                     padding: 0;
                 }
@@ -576,10 +575,12 @@
                     transition: all 0.5s ease-in-out;
                 }
                 
-                #contenido-servicios .container {
+                #contenido-servicios .container,
+                #contenido-catalogo .container {
                     background: transparent;
                 }
                 
+                #contenido-catalogo>.container>.container,
                 #contenido-servicios>.container>.container {
                     margin-top: 25px;
                     margin-bottom: 25px;
@@ -587,12 +588,20 @@
                     padding: 0;
                 }
                 
+                #contenido-catalogo>.container>.container>article,
                 #contenido-servicios>.container>.container>article {
                     padding: 0;
                 }
                 
                 .imagenes-pagina-servicios {
                     padding-bottom: 20px;
+                }
+                
+                .contenido-catalogo-imagenes {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
                 }
                 /******************** RESPONSIVE ********************/
                 /**** ENCABEZADO ****/
