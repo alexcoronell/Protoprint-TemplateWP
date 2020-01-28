@@ -726,8 +726,7 @@
                         top: 50px;
                         width: 600px;
                         height: 0px;
-                        overflow: hidden;
-                        background-color: #0095d5;
+                        //overflow: hidden;
                         color: #FFF;
                         text-align: center;
                         margin-left: auto;
@@ -747,6 +746,10 @@
                         width: 120px;
                         height: 120px;
                         text-align: center;
+                        transition: all 0.3s ease-in;
+                    }
+                    .menu .enlaces-menu:hover {
+                        transform: scale(1.04);
                     }
                     .menu .enlaces-menu a {
                         font-size: 1.2em;
