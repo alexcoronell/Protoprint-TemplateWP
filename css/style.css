@@ -318,13 +318,26 @@
                     text-align: center;
                     height: 50px;
                 }
-                
+                section#servicios .titulos-servicios:hover {
+                    background-color: #0095d5;
+                }
+                section#servicios .titulos-servicios a {
+                    text-decoration: none;
+                }
                 section#servicios .titulos-servicios h3 {
                     color: #FFF;
                     font-size: 2em;
                     text-shadow: 1px 1px 4px #1d4965;
                     line-height: 50px;
                 }
+                /******************** MODALES ********************/
+
+                .modal-title {
+                    font-weight: 700;
+                    color: #0095d5;
+                    font-size: 1.6em;
+                }
+                
                 /******************** SECCION INFOPROMOCIONES ********************/
                 
                 section#infopromociones {
@@ -519,6 +532,9 @@
                     .caja-mapas img {
                         margin-bottom: 10px;
                     }
+                    .modal {
+                        margin-top: 35px;
+                    }
                 }
                 
                 @media (min-width: 768px) {
@@ -672,6 +688,13 @@
                     section#servicios .titulos-servicios h3 {
                         font-size: 1.4em;
                         line-height: 35px;
+                    }
+                    /* MODALES */
+                    .modal {
+                        margin-top: 70px;
+                    }
+                    .modal-body p {
+                        font-size: 1.2em;
                     }
                     /* SECCION INFOPROMOCIONES */
                     .infopromociones-slider div {
