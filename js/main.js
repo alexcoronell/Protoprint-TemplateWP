@@ -63,4 +63,15 @@ $('document').ready(function() {
         offset: 100, // Integer. How far to offset the scrolling anchor location in pixels
 
     });
+    /************************* BOTONES QUIENES SOMOS ***************************/
+
+    $('#boton-mision').click(function() {
+        $('.contenidoMision').toggle();
+    })
+    $('#boton-vision').click(function() {
+        $('.contenidoVision').toggle();
+    })
+    $('#boton-valores').click(function() {
+        $('.contenidoValores').toggle();
+    })
 }); /* Fin $('document').ready(function() */

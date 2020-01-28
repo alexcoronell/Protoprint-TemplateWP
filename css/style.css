@@ -506,6 +506,74 @@
                     margin-bottom: 0;
                     font-size: 1.5em;
                 }
+                /********** GENERALES PAGINAS INTERNAS **********/
+                
+                .principal-paginasinternas {
+                    height: 40Vh;
+                    overflow: hidden;
+                    z-index: 1;
+                }
+                
+                .principal-quienessomos {
+                    width: 100%;
+                    padding: 0;
+                }
+                
+                .titulo-paginasinternas {
+                    margin: auto;
+                    position: absolute;
+                    top: 20%;
+                    left: 15%;
+                    width: 70%;
+                    background-color: rgba(255, 255, 255, 0.5);
+                }
+                
+                .titulo-paginasinternas h2 {
+                    font-family: Lato-BoldItalic;
+                    line-height: 1.5em;
+                    color: #121c24;
+                }
+                
+                .imagen-quienessomos {
+                    padding: 1em;
+                }
+                
+                .tituloprincipal-quienessomos {
+                    color: #0095d5;
+                    text-shadow: 1px 1px 1px #121c2485;
+                }
+                
+                .titulos-quienessomos {
+                    width: 100%;
+                    background-color: #0095d5;
+                }
+                
+                .titulos-quienessomos h4 {
+                    color: #FFF;
+                    line-height: 2em;
+                }
+                
+                #contenido-quienessomos p {
+                    font-size: 1em;
+                    padding: 0.2em;
+                }
+                
+                #botonMision,
+                #botonVision,
+                #botonValores {
+                    transition: all 2s ease-in-out;
+                }
+                
+                .contenidosMisionVisionValores {
+                    transition: all 2s ease-in-out;
+                }
+                
+                .contenidoMision,
+                .contenidoVision,
+                .contenidoValores {
+                    display: none;
+                    transition: all 0.5s ease-in-out;
+                }
                 /******************** RESPONSIVE ********************/
                 /**** ENCABEZADO ****/
                 
@@ -744,6 +812,13 @@
                     .llamar,
                     .whatsapp {
                         display: none;
+                    }
+                    /***** PAGINAS INTERNAS *****/
+                    #contenido-quienessomos p {
+                        font-size: 1.3em;
+                    }
+                    .contenidosMisionVisionValores {
+                        min-height: 425px;
                     }
                 }
                 
