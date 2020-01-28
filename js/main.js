@@ -23,6 +23,28 @@ $('document').ready(function() {
         $('.menu').removeClass('menu-desktop');
     });
 
+    /************************* MENU DESKTOP ***************************/
+    $(window).scroll(function() {
+
+        var scroll = $(window).scrollTop();
+        /* console.log(scroll); */
+        if (scroll >= 100) {
+            if ($(window).width() >= 768) {
+                $('.cabecera').addClass('efectoHeader');
+                $('.encabezado').addClass('efectoEncabezado');
+                $('.mostrar-menu').addClass('efectoBotonMenu');
+                $('.ocultar-boton-menu').addClass('efectoBotonMenu');
+            }
+        } else {
+            if ($(window).width() >= 768) {
+                $('.cabecera').removeClass('efectoHeader');
+                $('.encabezado').removeClass('efectoEncabezado');
+                $('.mostrar-menu').removeClass('efectoBotonMenu');
+                $('.ocultar-boton-menu').removeClass('efectoBotonMenu');
+            }
+        }
+    });
+
     /************************* INFOPROMOCIONES ***************************/
     $('.infopromociones-slider').slick({
         arrows: true,

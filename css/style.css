@@ -188,11 +188,12 @@
                     z-index: 99999;
                 }
                 
-                #encabezado {
+                .encabezado {
                     position: fixed;
                     width: 100%;
                     height: 50px;
                     background-color: #1d4965;
+                    transition: all 0.5s ease-in;
                 }
                 
                 .areamenu {
@@ -234,7 +235,7 @@
                     font-size: 4em;
                 }
                 
-                #encabezado h1 {
+                .encabezado h1 {
                     text-align: center;
                     color: #0095d5;
                     font-size: 1.7em;
@@ -559,6 +560,7 @@
                     }
                     header {
                         height: 100px;
+                        transition: all 0.5s ease-in;
                     }
                     .areamenu {
                         width: 100%;
@@ -575,10 +577,11 @@
                         width: 100px;
                         height: 100px;
                         opacity: 1;
-                        transition: all 1s ease-in;
+                        transition: all 0.5s ease-in;
                     }
                     #boton-menu p {
                         font-size: 1em;
+                        transition: all 0.5s ease-in;
                     }
                     #boton-menu p span {
                         font-size: 6em;
@@ -596,7 +599,7 @@
                         background-color: #FFF;
                         text-align: center;
                         cursor: pointer;
-                        transition: all 1s ease-in;
+                        transition: all 0.5s ease-in;
                         opacity: 1;
                         z-index: 10;
                     }
@@ -608,6 +611,7 @@
                         font-size: 2.5em;
                         font-weight: 500;
                         border: 0;
+                        transition: all 0.5s ease-in;
                     }
                     .ocultar-boton-menu {
                         display: none !important;
@@ -677,6 +681,21 @@
                     }
                     .esconder-menu {
                         display: none;
+                    }
+                    /**** EFECTOS MENU ****/
+                    .efectoHeader {
+                        height: 50px;
+                    }
+                    .efectoEncabezado {
+                        background-color: #1d496583 !important;
+                    }
+                    .efectoBotonMenu {
+                        width: 50px !important;
+                        height: 50px !important;
+                    }
+                    .efectoBotonMenu p {
+                        transform: scale(0.5);
+                        line-height: 50px;
                     }
                     /* CARRUSEL */
                     #carouselPrincipal {
