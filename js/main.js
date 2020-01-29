@@ -1,5 +1,5 @@
 $('document').ready(function() {
-    
+
     /* Mostrar y ocultar menu versión mobile */
     $('#boton-menu').click(function() {
         if ($(window).width() < 768) {
@@ -77,7 +77,7 @@ $('document').ready(function() {
 
     /************************* VALIDACION DE FORMULARIO ***************************/
     $('#contactoForm').bootstrapValidator({
-        message: 'Esto no es válido',
+        message: "Esto no es válido",
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
             invalid: 'glyphicon glyphicon-remove',
@@ -87,46 +87,48 @@ $('document').ready(function() {
             nombre: {
                 validators: {
                     notEmpty: {
-                        message: 'Este es un campo obligatorio'
+                        message: "Este es un campo obligatorio"
                     },
                 }
             },
             telefono: {
                 validators: {
                     notEmpty: {
-                        message: 'Este es un campo obligatorio'
+                        message: "Este es un campo obligatorio"
                     },
                 }
             },
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'Este es un campo obligatorio'
+                        message: "Este es un campo obligatorio"
                     },
                     emailAddress: {
-                        message: 'Eso no parece un correo electrónico'
+                        message: "Eso no parece un correo electrónico"
                     }
                 }
             },
             mensaje: {
                 validators: {
                     notEmpty: {
-                        message: 'El mensaje no puede ir vacío'
+                        message: "El mensaje no puede ir vacio"
                     }
                 }
             }
         }
     }).on('success.form.bv', function(e) {
         e.preventDefault();
-        
+
         var $form = $(e.target);
+
         var bv = $form.data('bootstrapValidator');
 
         $.post($form.attr('action'), $form.serialize(), function(result) {
-            $('#correcto').fadeIn();
+            $('#correcto').attr('display', 'block');
             console.log(result);
         }, 'json');
-    });
+
+    }); /* Fin bootstrapValidator */
 
 
 }); /* Fin $('document').ready(function() */
