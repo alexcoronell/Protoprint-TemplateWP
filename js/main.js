@@ -1,5 +1,5 @@
 $('document').ready(function() {
-
+    
     /* Mostrar y ocultar menu versión mobile */
     $('#boton-menu').click(function() {
         if ($(window).width() < 768) {
