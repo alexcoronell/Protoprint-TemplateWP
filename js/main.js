@@ -59,7 +59,7 @@ $('document').ready(function() {
 
     /***********************SMOOTH SCROLL ************************************/
     smoothScroll.init({
-        speed: 1500, // Integer. How fast to complete the scroll in milliseconds
+        speed: 1300, // Integer. How fast to complete the scroll in milliseconds
         offset: 100, // Integer. How far to offset the scrolling anchor location in pixels
 
     });
@@ -74,4 +74,59 @@ $('document').ready(function() {
     $('#boton-valores').click(function() {
         $('.contenidoValores').toggle();
     })
+
+    /************************* VALIDACION DE FORMULARIO ***************************/
+    $('#contactoForm').bootstrapValidator({
+        message: 'Esto no es válido',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            nombre: {
+                validators: {
+                    notEmpty: {
+                        message: 'Este es un campo obligatorio'
+                    },
+                }
+            },
+            telefono: {
+                validators: {
+                    notEmpty: {
+                        message: 'Este es un campo obligatorio'
+                    },
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Este es un campo obligatorio'
+                    },
+                    emailAddress: {
+                        message: 'Eso no parece un correo electrónico'
+                    }
+                }
+            },
+            mensaje: {
+                validators: {
+                    notEmpty: {
+                        message: 'El mensaje no puede ir vacío'
+                    }
+                }
+            }
+        }
+    }).on('success.form.bv', function(e) {
+        e.preventDefault();
+        
+        var $form = $(e.target);
+        var bv = $form.data('bootstrapValidator');
+
+        $.post($form.attr('action'), $form.serialize(), function(result) {
+            $('#correcto').fadeIn();
+            console.log(result);
+        }, 'json');
+    });
+
+
 }); /* Fin $('document').ready(function() */
