@@ -5,22 +5,31 @@ $('document').ready(function() {
         if ($(window).width() < 768) {
             $('.menu').removeClass('menu-oculto');
         } else {
-            $('#boton-menu').addClass('ocultar-boton-menu');
-            $('#boton-cerrar-menu').addClass('ocultar-menu');
-            $('#boton-cerrar-menu').removeClass('ocultar-boton-menu');
-            $('.menu').addClass('menu-desktop');
+            $('.enlaces-menu').show();
+            setTimeout(function() {
+                $('#boton-menu').addClass('ocultar-boton-menu');
+                $('#boton-cerrar-menu').addClass('ocultar-menu');
+                $('#boton-cerrar-menu').removeClass('ocultar-boton-menu');
+                $('.menu').addClass('menu-desktop');
+                $('.enlaces-menu').addClass('enlaces-menu-desktop');
+            }, 300);
+
         }
     });
-
+    /*******Boton cerrar menu versión móvil */
     $('.esconder-menu').click(function() {
         $('.menu').addClass('menu-oculto');
     });
-
+    /****Boton cerrar menu versión desktop */
     $('#boton-cerrar-menu').click(function() {
         $('#boton-menu').removeClass('ocultar-boton-menu');
         $('#boton-cerrar-menu').removeClass('ocultar-menu');
         $('#boton-cerrar-menu').addClass('ocultar-boton-menu');
         $('.menu').removeClass('menu-desktop');
+        $('.enlaces-menu').removeClass('enlaces-menu-desktop');
+        setTimeout(function() {
+            $('enlaces-menu').hide();
+        }, 500);
     });
 
     /************************* MENU DESKTOP ***************************/
@@ -66,14 +75,15 @@ $('document').ready(function() {
     /************************* BOTONES QUIENES SOMOS ***************************/
 
     $('#boton-mision').click(function() {
-        $('.contenidoMision').toggle();
-    })
+        $('.contenidoMision').fadeToggle(2000);
+    });
     $('#boton-vision').click(function() {
-        $('.contenidoVision').toggle();
-    })
+        $('.contenidoVision').fadeToggle(2000);
+    });
+
     $('#boton-valores').click(function() {
-        $('.contenidoValores').toggle();
-    })
+        $('.contenidoValores').fadeToggle(2000);
+    });
 
     /************************* VALIDACION DE FORMULARIO ***************************/
     $('#contactoForm').bootstrapValidator({
@@ -128,7 +138,8 @@ $('document').ready(function() {
             console.log(result);
         }, 'json');
 
-    }); /* Fin bootstrapValidator */
+    });
+    /* Fin bootstrapValidator */
 
 
 }); /* Fin $('document').ready(function() */

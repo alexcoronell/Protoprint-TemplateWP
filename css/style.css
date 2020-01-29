@@ -763,7 +763,7 @@
                         top: 50px;
                         width: 600px;
                         height: 0px;
-                        //overflow: hidden;
+                        overflow: hidden;
                         color: #FFF;
                         text-align: center;
                         margin-left: auto;
@@ -781,9 +781,17 @@
                     }
                     .menu .enlaces-menu {
                         width: 120px;
-                        height: 120px;
+                        height: 0;
                         text-align: center;
-                        transition: all 0.3s ease-in;
+                        transition: all 0.5s ease-in;
+                        opacity: 0;
+                        overflow: hidden;
+                        display: none;
+                    }
+                    .menu .enlaces-menu-desktop {
+                        height: 120px !important;
+                        opacity: 1 !important;
+                        display: block;
                     }
                     .menu .enlaces-menu:hover {
                         transform: scale(1.04);
