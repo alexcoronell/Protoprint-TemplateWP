@@ -12,6 +12,9 @@ $('document').ready(function() {
                 $('#boton-cerrar-menu').removeClass('ocultar-boton-menu');
                 $('.menu').addClass('menu-desktop');
                 $('.enlaces-menu').addClass('enlaces-menu-desktop');
+                setTimeout(function() {
+                    $('.menu').addClass('menu-desktop-shadow');
+                }, 500);
             }, 300);
 
         }
@@ -159,6 +162,6 @@ function limpiarFormulario() {
     $("#codigo").val('');
     $("#nombre").val('');
     $("#telefono").val('');
-	$("#email").val('');
-	$("#mensaje").val('');
+    $("#email").val('');
+    $("#mensaje").val('');
 }

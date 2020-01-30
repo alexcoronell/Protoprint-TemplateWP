@@ -648,7 +648,6 @@
                     section h2 {
                         font-size: 1.4em;
                     }
-
                     .infopromociones-slider {
                         width: 100%;
                     }
@@ -669,8 +668,7 @@
                     }
                     footer>#footer1>.container>.row>.col-12 {
                         text-align: center;
-                    } 
-
+                    }
                     .animated {
                         /*CSS transitions*/
                         -o-transition-property: none !important;
@@ -768,7 +766,7 @@
                         right: 0;
                         width: 99px;
                         height: 99px;
-                        border: 1px solid #000;
+                        border: 0;
                         border-bottom: 1px solid #000;
                         background-color: #FFF;
                         text-align: center;
@@ -803,6 +801,7 @@
                         top: 50px;
                         width: 600px;
                         height: 0px;
+                        border: 0;
                         overflow: hidden;
                         color: #FFF;
                         text-align: center;
@@ -813,11 +812,13 @@
                         transition: all 0.5s ease-in;
                         opacity: 0;
                         z-index: 99999;
-                        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.7);
                     }
                     .menu-desktop {
                         height: 120px !important;
                         opacity: 1 !important;
+                    }
+                    .menu-desktop-shadow {
+                        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.7);
                     }
                     .menu .enlaces-menu {
                         width: 120px;
