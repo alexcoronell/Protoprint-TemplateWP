@@ -75,15 +75,17 @@ $('document').ready(function() {
     /************************* BOTONES QUIENES SOMOS ***************************/
 
     $('#boton-mision').click(function() {
-        $('.contenidoMision').fadeToggle(2000);
+        $('.contenidoMision').fadeToggle();
     });
     $('#boton-vision').click(function() {
-        $('.contenidoVision').fadeToggle(2000);
+        $('.contenidoVision').fadeToggle();
     });
 
     $('#boton-valores').click(function() {
-        $('.contenidoValores').fadeToggle(2000);
+        $('.contenidoValores').fadeToggle();
     });
+    /************************* INICIO DE TOOLTIP ***************************/
+    $('[data-toggle="tooltip"]').tooltip()
 
     /************************* VALIDACION DE FORMULARIO ***************************/
     $('#contactoForm').bootstrapValidator({
@@ -134,8 +136,15 @@ $('document').ready(function() {
         var bv = $form.data('bootstrapValidator');
 
         $.post($form.attr('action'), $form.serialize(), function(result) {
-            $('#correcto').attr('display', 'block');
+            $('#correcto').fadeIn(500);
             console.log(result);
+            setTimeout(function() {
+                $('#correcto').fadeOut(500);
+                limpiarFormulario();
+                $('#contactoForm input', '#contactoForm textarea').val();
+                $("#contactoForm").trigger("reset");
+                /* $(".boton-formulario").attr("disabled", false);  */
+            }, 2000);
         }, 'json');
 
     });
@@ -143,3 +152,13 @@ $('document').ready(function() {
 
 
 }); /* Fin $('document').ready(function() */
+
+/*************FUNCION LIMPPIAR FORMULARIO **********/
+// Funcion limpiar
+function limpiarFormulario() {
+    $("#codigo").val('');
+    $("#nombre").val('');
+    $("#telefono").val('');
+	$("#email").val('');
+	$("#mensaje").val('');
+}

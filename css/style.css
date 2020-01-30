@@ -384,8 +384,11 @@
                     text-align: center;
                     font-size: 1.2em;
                     border: 2px solid green;
-                    width: 100%;
+                    border-radius: 5px;
+                    width: 80%;
                     display: none;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
                 
                 .has-error .help-block {
@@ -589,7 +592,7 @@
                 .contenidoVision,
                 .contenidoValores {
                     display: none;
-                    transition: all 0.5s ease-in-out;
+                    transition: all 1s linear;
                 }
                 
                 #contenido-servicios .container,
