@@ -648,6 +648,7 @@
                     section h2 {
                         font-size: 1.4em;
                     }
+
                     .infopromociones-slider {
                         width: 100%;
                     }
@@ -666,6 +667,10 @@
                     .modal {
                         margin-top: 35px;
                     }
+                    footer>#footer1>.container>.row>.col-12 {
+                        text-align: center;
+                    } 
+
                     .animated {
                         /*CSS transitions*/
                         -o-transition-property: none !important;
@@ -685,6 +690,38 @@
                         -o-animation: none !important;
                         -ms-animation: none !important;
                         animation: none !important;
+                    }
+                    /* PAGINA SERVICIOS - CATALOGO */
+                    section#contenido-catalogo>.container {
+                        padding: 0;
+                    }
+                    section#contenido-servicios>.container>.container,
+                    section#contenido-catalogo>.container>.container {
+                        width: 100%;
+                        padding: 0;
+                        margin-left: 0;
+                    }
+                    section#contenido-servicios>.container>.container>article,
+                    section#contenido-catalogo>.container>.container>article {
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding: 0;
+                    }
+                    .titulos-pagina-servicios {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    .imagenes-pagina-servicios {
+                        padding: 0;
+                    }
+                    .contenidos-paginas-servicios {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .contenidos-paginas-servicios p {
+                        font-size: 1.2em;
                     }
                 }
                 
