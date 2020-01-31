@@ -1,5 +1,10 @@
 $('document').ready(function() {
 
+    /* Ocultar Fondo Cargando */
+    setTimeout(function() {
+        $('#fondo-cargando').fadeOut();
+    }, 1000);
+
     /* Mostrar y ocultar menu versión mobile */
     $('#boton-menu').click(function() {
         if ($(window).width() < 768) {
@@ -14,7 +19,7 @@ $('document').ready(function() {
                 $('.enlaces-menu').addClass('enlaces-menu-desktop');
                 setTimeout(function() {
                     $('.menu').addClass('menu-desktop-shadow');
-                }, 500);
+                }, 300);
             }, 300);
 
         }
@@ -32,6 +37,7 @@ $('document').ready(function() {
         $('.enlaces-menu').removeClass('enlaces-menu-desktop');
         setTimeout(function() {
             $('enlaces-menu').hide();
+            $('.menu').removeClass('menu-desktop-shadow');
         }, 500);
     });
 

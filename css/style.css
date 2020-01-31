@@ -89,6 +89,21 @@
                     max-width: 992px;
                     background-color: #FFF;
                 }
+                /****************** FONDO CARGANDO *******************/
+                
+                #fondo-cargando {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #FFF;
+                    opacity: 1;
+                    z-index: 9999999;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
                 /****************** FONDO ANIMADO *******************/
                 
                 @keyframes fondoAnimado {
