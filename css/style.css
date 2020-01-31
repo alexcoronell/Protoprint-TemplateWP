@@ -578,6 +578,10 @@
                     text-shadow: 1px 1px 1px #121c2485;
                 }
                 
+                section#contenido-quienessomos {
+                    margin-top: 25px;
+                }
+                
                 .titulos-quienessomos {
                     width: 100%;
                     background-color: #0095d5;
@@ -637,6 +641,11 @@
                     justify-content: center;
                     align-items: center;
                     width: 100%;
+                }
+                
+                .contenido-catalogo-imagenes>div>img {
+                    margin-left: auto;
+                    margin-right: auto;
                 }
                 /******************** RESPONSIVE ********************/
                 /**** ENCABEZADO ****/
@@ -704,7 +713,24 @@
                         -ms-animation: none !important;
                         animation: none !important;
                     }
-                    /* PAGINA SERVICIOS - CATALOGO */
+                    /* GENERALES PAGINAS INTERNAS */
+                    section.principal-paginasinternas {
+                        padding-bottom: 0;
+                        height: 40Vh;
+                    }
+                    section.principal-paginasinternas>.container {
+                        height: 100%;
+                        padding-bottom: 0;
+                    }
+                    section.principal-paginasinternas>.container>img {
+                        margin-top: 50px;
+                    }
+                    /* PAGINA SERVICIOS - CATALOGO - BLOG */
+                    section#contenido-servicios,
+                    section#contenido-catalogo,
+                    section#contenido-blog {
+                        padding-top: 0 !important;
+                    }
                     section#contenido-catalogo>.container {
                         padding: 0;
                     }
@@ -735,6 +761,20 @@
                     }
                     .contenidos-paginas-servicios p {
                         font-size: 1.2em;
+                    }
+                    #contenido-catalogo {
+                        padding: 10px !important;
+                    }
+                    .contenido-catalogo-imagenes {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .contenido-catalogo-imagenes>div {
+                        background-color: #FFF;
+                    }
+                    .contenido-catalogo-imagenes>div>img {
+                        margin-left: auto;
+                        margin-right: auto;
                     }
                 }
                 
@@ -959,6 +999,12 @@
                     .imagenes-pagina-servicios {
                         margin-top: 15px;
                     }
+                    section#contenido-servicios {
+                        padding: 0 !important;
+                    }
+                    section#contenido-servicios>.container {
+                        padding-right: 0;
+                    }
                     .contenidos-paginas-servicios {
                         display: flex;
                         justify-content: center;
@@ -966,6 +1012,9 @@
                     }
                     .contenidos-paginas-servicios p {
                         font-size: 1.3em;
+                    }
+                    section#contenido-catalogo>.container {
+                        padding-right: 0;
                     }
                 }
                 
