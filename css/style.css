@@ -582,6 +582,12 @@
                     margin-top: 25px;
                 }
                 
+                section#contenido-quienessomos>.container>.row>article.imagen-quienessomos {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
                 .titulos-quienessomos {
                     width: 100%;
                     background-color: #0095d5;
@@ -732,6 +738,11 @@
                     }
                     section.principal-paginasinternas>.container>img {
                         margin-top: 50px;
+                    }
+                    /* PAGINA QUIENES SOMOS */
+                    section#contenido-quienessomos>.container>.row>article.imagen-quienessomos>img {
+                        margin-top: 2em;
+                        margin-bottom: 2em;
                     }
                     /* PAGINA SERVICIOS - CATALOGO - BLOG */
                     section#contenido-servicios,
