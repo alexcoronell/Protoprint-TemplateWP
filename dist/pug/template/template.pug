@@ -1,0 +1,19 @@
+block config
+    include ../config/config
+
+<!DOCTYPE html>
+html(lang="es")
+    head
+        include ../config/googletagmanager
+        include ../config/metas
+        title= `Impresión Digital | ${currentPage}`
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        include ../config/styles
+    body(class=`${currentPage}`)
+        #top-pagina
+        include ../components/fondocargando
+        include ../components/fondoanimado
+        include ../modules/header
+        block main
+        include ../modules/footer
+        include ../config/scripts

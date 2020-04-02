@@ -1,0 +1,21 @@
+include inicio-servicios-data
+
+
+main
+    section#servicios
+        .container
+            .row
+                .titulosections.col-12.col-md-3
+                    h2= `${titulosection}`
+                .col-12.col-md-9.contenido-servicios
+                    .container
+                        .row
+                            each servicio in servicios
+                                .col-12.col-sm-6.col-md-4.imagenes-servicios-seccion
+                                    .container.wow.fadeInUp(data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="60")
+                                        img.img-fluid(src= servicio.urlImg)
+                                        .titulos-servicios
+                                            a(href="#modal" data-toggle="modal" data-target=`#${servicio.nombreModal}`)
+                                                h3= `${servicio.titulo}`
+
+        include inicio-servicios-modals

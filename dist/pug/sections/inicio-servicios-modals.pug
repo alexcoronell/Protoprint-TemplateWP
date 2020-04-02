@@ -1,0 +1,20 @@
+include inicio-servicios-data
+
+each servicio in servicios
+    - var nombremodales = servicio.nombreModal 
+    <div id=#{nombremodales} class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        .modal-dialog(role="document")
+            .modal-content
+                .modal-header
+                    h5.modal-title#exampleModalLabel Impresión DIgital
+                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+                .modal-body.container
+                    .row
+                        .col-12.col-md-4
+                            img.img-fluid(src= servicio.urlImg alt= servicio.titulo title= servicio.titulo)
+                        .col-12.col-md-8
+                            p Impresión digital hasta de 100x33 cm en adhesivos y papeles finos con laminado litográfico, personalización de producto impreso desde 1 unidad, afiches, volantes, tarjetas personales, diplomas, sticker, etiquetas, carpetas y tarjetas personalizadas para toda ocasión.
+                .modal-footer
+                    button.btn.btn-secondary(type="button" data-dismiss="modal") Close
+    </div>

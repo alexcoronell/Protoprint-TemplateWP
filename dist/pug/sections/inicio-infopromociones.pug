@@ -1,0 +1,12 @@
+include inicio-infopromociones-data
+
+section#infopromociones
+    .container
+        .row
+            .titulosections.col-12.col-md-3
+                h2= `${titulosection}`
+            .col-12.col-md-9.text-center
+                .infopromociones-slider.p-0.p-md-1
+                    each info in infopromociones
+                        div
+                            img.img-fluid(src=`${info}`)
