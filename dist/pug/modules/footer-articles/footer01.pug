@@ -1,0 +1,23 @@
+include ../footer-data
+
+
+article#footer1
+    .container
+        .row
+            .col-12.col-sm-6.col-md-4.text-center.text-sm-left
+                h4 Contacta con nosotros
+                ul
+                    each telefono in telefonos
+                        li= telefono
+                    li
+                        a(href=`mailto:${correo}` target="_blank") Mándanos un email <br>#{correo}
+            .col-12.col-sm-6.col-md-4.text-center.text-sm-left
+                h4 Dónde estamos
+                ul
+                    each direccion in direcciones
+                        li= `${direccion.nombreSede}: ${direccion.direccionSede}`
+            .col-12.col-sm-6.col-md-4.text-center.text-sm-left
+                h4 Horarios
+                ul
+                    each horario in horarios
+                        li= horario     

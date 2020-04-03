@@ -1,37 +1,3 @@
-   
-
-
-    <!------------------MODALES DE SERVICIOS ----------------------->
-    <!---- Modal Impresión Digital---->
-    <div class="modal fade" id="ModalImpresionDigital" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Impresión Digital</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-                </div>
-                <div class="modal-body container">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <img src="img/impresiondigital.jpg" alt="Impresión Digital" title="Impresión Digital" class="img-fluid">
-                        </div>
-                        <div class="col-12 col-md-8">
-                            <p>Impresión digital hasta de 100x33 cm en adhesivos y papeles finos con laminado litográfico, personalización de producto impreso desde 1 unidad, afiches, volantes, tarjetas personales, diplomas, sticker, etiquetas, carpetas
-                                y tarjetas personalizadas para toda ocasión.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
 
 
 
@@ -43,66 +9,6 @@
                 <div class="titulosections col-12 col-md-3">
                     <h2>Contacto</h2>
                 </div>
-                <div class="col-12 col-md-9 container">
-                    <div class="row">
-                        <div class="col-12 cajaformulario container">
-                            <form action="ajaxSubmit.php" class="row form-horizontal" id="contactoForm" method="POST">
-                                <div class="col-12 text-center wow flash" data-wow-duration=".5s" data-wow-delay="0.2s" data-wow-offset="60">
-                                    <h4>Cuéntanos en qué te podemos ayudar</h4>
-                                </div>
-                                <div class="col-12 col-md-4 form-group wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="60">
-                                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Tu nombre:" required data-toggle="tooltip" data-placement="top" title="Nombre">
-                                </div>
-                                <div class="col-12 col-md-4 form-group wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="60">
-                                    <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Tu teléfono:" required data-toggle="tooltip" data-placement="top" title="Teléfono">
-                                </div>
-                                <div class="col-12 col-md-4 form-group wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="60">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Tu email:" required data-toggle="tooltip" data-placement="top" title="Email">
-                                </div>
-                                <div class="form-group col-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s" data-wow-offset="60">
-                                    <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Tu mensaje" required data-toggle="tooltip" data-placement="top" title="Mensaje"></textarea>
-                                </div>
-                                <div class="form-group col-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" data-wow-offset="60">
-                                    <button type="submit" class="btn btn-primary boton-formulario">Enviar</button>
-                                </div>
-                                <div id="correcto" class="offset-2 col-8 mb-2">
-                                    El mensaje se envió correctamente
-                                </div>
-
-                            </form>
-                        </div>
-                        <!-- Fin col-12 cajaformulario -->
-                        <div class="col-12 caja-mapas container">
-                            <div class="row">
-                                <div class="col-12 col-md-6 anima1">
-                                    <div class="mapainteractivo text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="1.2s" data-wow-offset="60">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.0511718332837!2d-75.56932643457532!3d6.254958767773654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428fc4179b3b1%3A0x4b16809c9761eb24!2sCra.%2054%20%2354-72%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1580213923737!5m2!1ses-419!2sco"
-                                            allowfullscreen=""></iframe>
-                                        <h5>Sede Centro</h5>
-                                    </div>
-
-                                </div>
-                                <div class="col-12 col-md-6 anima2">
-                                    <div class="mapainteractivo text-center wow zoomIn" data-wow-duration="1s" data-wow-delay="1.4s" data-wow-offset="60">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2888325557083!2d-75.60645648590676!3d6.225596528283532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429ec65f66eed%3A0x3bd8cd0103094042!2sCra.%2082b%20%2320-32%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1580215123134!5m2!1ses-419!2sco"
-                                            allowfullscreen=""></iframe>
-                                        <h5>Sede Belén</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- col-12 caja-mapas row -->
-                    </div>
-                    <!-- Fin row 2 -->
-                </div>
-                <!-- Fin col-12 col-md-9 container -->
-                <!-- Fin titulosections col-12 col-md-3 -->
-            </div>
-            <!-- fin row -->
-        </div>
-        <!-- fin container -->
-    </section>
-
     <!-------------------------------------------- FOOTER ----------------------------------------------->
     <footer>
         <article id="footer1">
@@ -128,7 +34,7 @@
                     <div class="col-12 col-sm-6 col-md-4 text-center text-sm-left">
                         <h4>Horarios:</h4>
                         <ul>
-                            <li>Lunes a Viernes de 8:00am a 6:00pm</li>
+                            <li></li>
                             <li>Sábados de 8:00am a 1:00pm</li>
                         </ul>
                     </div>

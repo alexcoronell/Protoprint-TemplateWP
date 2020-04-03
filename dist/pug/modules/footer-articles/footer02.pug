@@ -1,0 +1,29 @@
+include ../footer-data
+
+article#footer2
+    .container
+        .row
+            .col-12.col-md-4.text-center.text-md-left
+                h4 Nuestras redes sociales
+            .col-12.col-md-4
+                ul.redessociales
+                    each redsocial in redessociales
+                        if redsocial.url == "null"
+                            li
+                               <i class="#{redsocial.icon}" aria-hidden="true" data-toggle="tooltip" data-placement="top" title=#{redsocial.nombrered}></i> 
+                        else
+                            li
+                                a(href=`${redsocial.url}` target="_blank")
+                                    <i class="#{redsocial.icon}" aria-hidden="true" data-toggle="tooltip" data-placement="top" title=#{redsocial.nombrered}></i>
+            .col-12.col-sm-6.col-md-4
+                ul.redessociales.llamar.text-center
+                    li
+                        a(href="tel:+573138885427")
+                            i.fa.fa-phone-square(aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Llámanos al 313 888 5427")
+                        span Llámanos
+            .col-12.col-sm-6.col-md-4
+                ul.redessociales.whatsapp.text-center
+                    li
+                        a(href="https://api.whatsapp.com/send?phone=573138885427&text=Hola!%20Quiero%20tener%20más%20información!")
+                            i.fa.fa-whatsapp(aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Escríbenos al Whatsapp")
+                        span Escríbenos al Whatsapp!!
