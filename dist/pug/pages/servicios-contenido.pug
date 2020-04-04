@@ -1,0 +1,12 @@
+main
+    section#contenido-servicios.contenido-paginasinternas.py-4
+        .container
+            each servicio in servicios
+                .container.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="60")
+                    article.col-12.row
+                        .titulos-pagina-servicios.col-12.col-md-3.titulosections
+                            h3= `${servicio.titulo}`
+                        .imagenes-pagina-servicios.col-12.col-sm-7.col-md-5
+                            img.img-fluid(src= servicio.urlImg alt= servicio.titulo title= servicio.titulo)
+                        .contenidos-paginas-servicios.col-12.col-sm-5.col-md-4
+                            p= `${servicio.content}`

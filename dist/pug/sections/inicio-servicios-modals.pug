@@ -1,4 +1,4 @@
-include inicio-servicios-data
+include ../data/servicios-data
 
 each servicio in servicios
     - var nombremodales = servicio.nombreModal 
@@ -14,7 +14,7 @@ each servicio in servicios
                         .col-12.col-md-4
                             img.img-fluid(src= servicio.urlImg alt= servicio.titulo title= servicio.titulo)
                         .col-12.col-md-8
-                            p Impresión digital hasta de 100x33 cm en adhesivos y papeles finos con laminado litográfico, personalización de producto impreso desde 1 unidad, afiches, volantes, tarjetas personales, diplomas, sticker, etiquetas, carpetas y tarjetas personalizadas para toda ocasión.
+                            p= `${servicio.content}`
                 .modal-footer
                     button.btn.btn-secondary(type="button" data-dismiss="modal") Close
     </div>
