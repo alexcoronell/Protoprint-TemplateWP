@@ -1,6 +1,9 @@
 extends template/template
+block config
+    - var currentPage = "Inicio"
 
 block main
+    - var currentPage = "Inicio"
     include sections/inicio-principal
     include sections/inicio-empresa
     include sections/inicio-servicios
