@@ -1,0 +1,128 @@
+/******************** FOOTER ********************/
+
+footer {
+    color: $white;
+}
+
+footer article {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer h4 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: $white;
+}
+
+footer a:hover {
+    color: $white;
+    text-decoration: none;
+}
+
+
+/* Footer 1 */
+
+footer .container {
+    background: transparent;
+}
+
+#footer1 {
+    background-color: $azul-principal;
+}
+
+
+/* Footer 2 */
+
+#footer2 {
+    background-color: $azul3;
+    padding: 10px;
+}
+
+.redessociales {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redessociales li {
+    font-size: 3em;
+    opacity: 0.7;
+}
+
+.redessociales li:hover {
+    opacity: 1;
+}
+
+.llamar li,
+.whatsapp li {
+    line-height: .3em;
+}
+
+.llamar li a,
+.whatsapp li a {
+    display: block;
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.llamar span,
+.whatsapp span {
+    font-size: 0.5em;
+    margin-top: 0;
+}
+
+
+/* Footer 3 */
+
+#footer3 {
+    background-color: $azul4;
+    padding: 15px;
+}
+
+#footer3 p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* Footer 4 */
+
+#footer4 {
+    background-color: $azul2;
+    padding: 20px;
+}
+
+#footer4 p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+
+/* Footer 5 */
+
+#footer5 {
+    background-color: $azul5;
+    padding: 10px;
+}
+
+#footer5 p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+    #footer1 {
+        padding-bottom: 70px;
+    }
+    .llamar,
+    .whatsapp {
+        display: none;
+    }
+}

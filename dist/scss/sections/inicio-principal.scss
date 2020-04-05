@@ -1,0 +1,20 @@
+/******************** SECCION PRINCIPAL ********************/
+
+section#principal {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 25px;
+}
+
+#carouselPrincipal {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    /* CARRUSEL */
+    #carouselPrincipal {
+        min-width: 768px;
+        max-width: 992px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,30 @@
+/********** GENERALES PAGINAS INTERNAS **********/
+
+.principal-paginasinternas {
+    height: 40Vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.principal-quienessomos,
+.principal-servicios,
+.principal-catalogo,
+.principal-blog {
+    width: 100%;
+    padding: 0;
+}
+
+.titulo-paginasinternas {
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    background-color: rgba($white, 0.5);
+}
+
+.titulo-paginasinternas h2 {
+    font-family: Lato-BoldItalic;
+    line-height: 1.5em;
+    color: $azul5;
+}

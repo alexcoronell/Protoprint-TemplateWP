@@ -1,0 +1,30 @@
+.caja-mapas {
+    margin-bottom: 15px;
+}
+
+.mapainteractivo {
+    overflow: hidden;
+}
+
+.mapainteractivo h5 {
+    color: #0095d5;
+    font-family: Lato-BlackItalic;
+}
+
+.mapainteractivo iframe {
+    border: 2px solid #0095d5;
+    width: 315.75px;
+    height: 315.75px;
+}
+
+@media (max-width: 767px) {
+    .caja-mapas img {
+        margin-bottom: 10px;
+    }
+    .modal {
+        margin-top: 35px;
+    }
+    footer>#footer1>.container>.row>.col-12 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,13 @@
+section#contenido-blog>.container {
+    background-color: $white;
+}
+
+#proximamente {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    section#contenido-blog {
+        margin-top: 25px;
+    }
+}

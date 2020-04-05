@@ -1,0 +1,38 @@
+ /******************** ESTILOS BASE O GENERALES ********************/
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     list-style: none;
+ }
+ 
+ .titulosections {
+     background-color: $azul-principal;
+     color: $white;
+     font-family: Lato-BoldItalic;
+     padding: 5px;
+     text-align: center;
+     line-height: 1.2em;
+     text-shadow: 2px 2px 3px rgba($azul4, 0.6);
+ }
+ 
+ .container {
+     max-width: 992px;
+     background-color: $white;
+ }
+ 
+ @media (max-width: 767px) {
+     section h2 {
+         font-size: 1.4em;
+     }
+ }
+ 
+ @media (min-width: 768px) {
+     .titulosections {
+         min-height: 400px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+ }

@@ -1,0 +1,22 @@
+/****************** SECCION QUIENES SOMOS *******************/
+
+section#quienessomos {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    z-index: 1;
+}
+
+section#quienessomos p {
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+    section#quienessomos p {
+        text-align: justify;
+        font-size: 1.4em;
+        margin: 65px;
+        line-height: 1.6em;
+    }
+}

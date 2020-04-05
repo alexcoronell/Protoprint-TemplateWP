@@ -1,0 +1,66 @@
+.imagen-quienessomos {
+    padding: 1em;
+}
+
+.tituloprincipal-quienessomos {
+    color: #0095d5;
+    text-shadow: 1px 1px 1px #121c2485;
+}
+
+section#contenido-quienessomos {
+    margin-top: 25px;
+}
+
+section#contenido-quienessomos>.container>.row>article.imagen-quienessomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulos-quienessomos {
+    width: 100%;
+    background-color: #0095d5;
+}
+
+.titulos-quienessomos h4 {
+    color: #FFF;
+    line-height: 2em;
+}
+
+#contenido-quienessomos p {
+    font-size: 1em;
+    padding: 0.2em;
+}
+
+#botonMision,
+#botonVision,
+#botonValores {
+    transition: all 2s ease-in-out;
+}
+
+.contenidosMisionVisionValores {
+    transition: all 2s ease-in-out;
+}
+
+.contenidoMision,
+.contenidoVision,
+.contenidoValores {
+    display: none;
+    transition: all 1s linear;
+}
+
+@media (max-width: 767px) {
+    section#contenido-quienessomos>.container>.row>article.imagen-quienessomos>img {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    #contenido-quienessomos p {
+        font-size: 1.3em;
+    }
+    .contenidosMisionVisionValores {
+        min-height: 425px;
+    }
+}

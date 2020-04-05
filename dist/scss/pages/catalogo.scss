@@ -1,0 +1,34 @@
+.contenido-catalogo-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contenido-catalogo-imagenes>div>img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    #contenido-catalogo {
+        padding: 10px !important;
+    }
+    .contenido-catalogo-imagenes {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenido-catalogo-imagenes>div {
+        background-color: #FFF;
+    }
+    .contenido-catalogo-imagenes>div>img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    section#contenido-catalogo>.container {
+        padding-right: 0;
+    }
+}

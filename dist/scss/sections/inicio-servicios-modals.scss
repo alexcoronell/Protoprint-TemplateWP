@@ -1,0 +1,16 @@
+/******************** MODALES ********************/
+
+.modal-title {
+    font-weight: 700;
+    color: #0095d5;
+    font-size: 1.6em;
+}
+
+@media (min-width: 768px) {
+    .modal {
+        margin-top: 70px;
+    }
+    .modal-body p {
+        font-size: 1.2em;
+    }
+}

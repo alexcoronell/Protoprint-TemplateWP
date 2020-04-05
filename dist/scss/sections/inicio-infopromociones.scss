@@ -1,0 +1,44 @@
+/******************** SECCION INFOPROMOCIONES ********************/
+
+section#infopromociones {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.infopromociones-slider {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.slick-dots li.slick-active button::before {
+    color: $azul-principal !important;
+    opacity: 1;
+    text-shadow: 1px 1px 1px rgba($azul-principal, .6);
+}
+
+@media (max-width: 767px) {
+    .infopromociones-slider {
+        width: 100%;
+    }
+    .botones-slider-infopromociones::before {
+        display: none;
+    }
+    .slick-dots li {
+        margin: 0;
+    }
+    .infopromociones-slider {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .infopromociones-slider div {
+        margin-left: 3px;
+    }
+    .botones-slider-infopromociones::before {
+        color: $azul-principal;
+        cursor: pointer;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,33 @@
+// Aquí se importarán los componentes del proyecto
+// Config
+@import "config/config";
+//
+// ESTILOS BASE
+@import "base/base";
+@import "base/base-internas";
+//
+// Components
+@import "components/fondo-cargando";
+@import "components/fondo-animado";
+@import "components/header";
+@import "components/menu";
+@import "components/footer";
+//
+// Sections
+@import "sections/inicio-principal";
+@import "sections/inicio-empresa";
+@import "sections/inicio-servicios";
+@import "sections/inicio-servicios-modals";
+@import "sections/inicio-infopromociones";
+@import "sections/inicio-contacto";
+@import "sections/inicio-contacto-mapas";
+//
+// Pages
+@import "pages/base-pages";
+@import "pages/quienessomos";
+@import "pages/servicios";
+@import "pages/catalogo";
+@import "pages/blog.scss";
+//
+// NO ANIMATIONS
+@import "config/no-animation.scss";
