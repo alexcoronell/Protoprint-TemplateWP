@@ -14,7 +14,11 @@ main
                         </button>
                         <div class=#{seccionEmpresa.classContenido}>
                             - var n = seccionEmpresa.contenidos.length
-                            while n > 0
+                            - var i = 0
+                            if n == 0
                                 p= `${seccionEmpresa.contenidos}`
-                                - n = n - 1
+                            else
+                                while i < n
+                                    p= `${seccionEmpresa.contenidos[i]}`
+                                    - var i = i + 1
                         </div>
